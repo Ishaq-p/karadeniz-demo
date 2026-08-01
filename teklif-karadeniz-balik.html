@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teklif — Karadeniz Balık Dijital Menü & Web Sitesi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F5F2EC;
+      color: #1a1a1a;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.10);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0A2A28 0%, #0E3A37 60%, #14504B 100%);
+      padding: 48px 56px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      right: -60px; top: -60px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(63,193,203,0.18), transparent 70%);
+      pointer-events: none;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 36px;
+    }
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #F0DDA0;
+      letter-spacing: 0.02em;
+    }
+    .brand-sub {
+      font-size: 11px;
+      color: rgba(240,221,160,0.6);
+      margin-top: 4px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .doc-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(240,221,160,0.55);
+      border: 1px solid rgba(240,221,160,0.25);
+      padding: 5px 12px;
+      border-radius: 6px;
+    }
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .header-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+    .header-meta {
+      display: flex;
+      gap: 28px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .meta-label {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(240,221,160,0.5);
+      margin-bottom: 3px;
+    }
+    .meta-value {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* ── Body ── */
+    .body { padding: 52px 56px; }
+
+    .section { margin-bottom: 44px; }
+    .section-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #3FC1CB;
+      margin-bottom: 8px;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #0A2A28;
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+    .section p {
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: #444;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e3d9;
+      margin: 0 0 44px;
+    }
+
+    /* ── Feature grid ── */
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .feature-card {
+      background: #F9F7F2;
+      border: 1px solid #E8E3D9;
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+    .feature-icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .feature-card h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0A2A28;
+      margin-bottom: 5px;
+    }
+    .feature-card p {
+      font-size: 11.5px;
+      color: #666;
+      line-height: 1.55;
+    }
+
+    /* ── Deliverables ── */
+    .deliverables {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .deliv-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 13px 16px;
+      background: #F9F7F2;
+      border-radius: 10px;
+      border: 1px solid #E8E3D9;
+    }
+    .deliv-check {
+      width: 22px; height: 22px; flex-shrink: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0E3A37, #3FC1CB);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 11px; font-weight: 700;
+      margin-top: 1px;
+    }
+    .deliv-text {
+      font-size: 13px;
+      color: #333;
+      line-height: 1.5;
+    }
+    .deliv-text strong { color: #0A2A28; }
+
+    /* ── Pricing ── */
+    .pricing-table {
+      margin-top: 22px;
+      border: 1px solid #E8E3D9;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .pricing-row {
+      display: flex;
+      align-items: center;
+      padding: 18px 24px;
+      border-bottom: 1px solid #E8E3D9;
+      gap: 12px;
+    }
+    .pricing-row:last-child { border-bottom: none; }
+    .pricing-row.highlight {
+      background: linear-gradient(135deg, #0A2A28, #0E3A37);
+    }
+    .pricing-icon { font-size: 20px; flex-shrink: 0; }
+    .pricing-label { flex: 1; }
+    .pl-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0A2A28;
+    }
+    .pricing-row.highlight .pl-title { color: #F0DDA0; }
+    .pl-sub {
+      font-size: 11.5px;
+      color: #888;
+      margin-top: 2px;
+    }
+    .pricing-row.highlight .pl-sub { color: rgba(240,221,160,0.55); }
+    .pricing-amount {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0A2A28;
+      white-space: nowrap;
+    }
+    .pricing-row.highlight .pricing-amount { color: #F0DDA0; }
+    .pricing-period {
+      font-size: 10px;
+      font-weight: 500;
+      color: #aaa;
+      margin-top: 1px;
+      text-align: right;
+    }
+    .pricing-row.highlight .pricing-period { color: rgba(240,221,160,0.45); }
+
+    /* ── Timeline ── */
+    .timeline {
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+    .tl-row {
+      display: flex;
+      gap: 18px;
+    }
+    .tl-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 32px;
+      flex-shrink: 0;
+    }
+    .tl-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: #0A2A28;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    .tl-line {
+      width: 2px;
+      flex: 1;
+      background: #E8E3D9;
+      margin: 4px 0;
+    }
+    .tl-row:last-child .tl-line { display: none; }
+    .tl-content { padding-bottom: 22px; }
+    .tl-week {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #3FC1CB;
+      margin-bottom: 3px;
+    }
+    .tl-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #0A2A28;
+      margin-bottom: 4px;
+    }
+    .tl-desc {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.55;
+    }
+
+    /* ── Legal banner ── */
+    .legal-banner {
+      background: linear-gradient(135deg, #0C3330, #0A2A28);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 22px;
+    }
+    .legal-icon { font-size: 28px; flex-shrink: 0; }
+    .lt-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #F0DDA0;
+      margin-bottom: 4px;
+    }
+    .lt-desc {
+      font-size: 11.5px;
+      color: rgba(240,221,160,0.6);
+      line-height: 1.5;
+    }
+
+    /* ── CTA ── */
+    .cta-box {
+      background: linear-gradient(135deg, #0A2A28, #14504B);
+      border-radius: 16px;
+      padding: 32px 36px;
+      text-align: center;
+      margin-top: 44px;
+    }
+    .cta-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .cta-box p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 22px;
+    }
+    .cta-contact {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .cta-item {
+      font-size: 12.5px;
+      color: #F0DDA0;
+      font-weight: 600;
+    }
+    .cta-item span {
+      display: block;
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(240,221,160,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+
+    .footer-note {
+      text-align: center;
+      padding: 20px 56px 28px;
+      font-size: 10.5px;
+      color: #aaa;
+      border-top: 1px solid #E8E3D9;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <div class="brand-name">Karadeniz Balık · Batıpark</div>
+        <div class="brand-sub">İstanbul — 15 yıldır aynı lezzet</div>
+      </div>
+      <div class="doc-label">Ticari Teklif</div>
+    </div>
+    <h1>Dijital Menü &amp;<br/>Web Sitesi Teklifi</h1>
+    <div class="header-sub">
+      QR akıllı menü sistemi · Kurumsal web sitesi · Yasal uyum · Çoklu dil desteği
+    </div>
+    <div class="header-meta">
+      <div>
+        <div class="meta-label">Teklif Tarihi</div>
+        <div class="meta-value">01 Ağustos 2026</div>
+      </div>
+      <div>
+        <div class="meta-label">Geçerlilik</div>
+        <div class="meta-value">30 gün</div>
+      </div>
+      <div>
+        <div class="meta-label">Hazırlayan</div>
+        <div class="meta-value">— yazınız —</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- Giriş -->
+    <div class="section">
+      <div class="section-eyebrow">Yönetici Özeti</div>
+      <h2>Müşteriniz sizi dijitalde de hissetsin</h2>
+      <p>
+        Karadeniz Balık, 15 yıllık köklü lezzet geleneğini modern bir dijital deneyimle buluşturmak için
+        benzersiz bir konumdadır. Bu teklif; masaya özel QR dijital menü, yapay zeka destekli ürün önerisi,
+        alerjen/kalori bilgisi ve tam yasal uyumluluk içeren <strong>kapsamlı bir dijital altyapı</strong> sunmaktadır.
+        Sistem tek seferlik bir yatırımla hayata geçirilecek, aylık düşük bir bakım bedeli ile güncel ve çalışır hâlde tutulacaktır.
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Özellikler -->
+    <div class="section">
+      <div class="section-eyebrow">Neler Dahil?</div>
+      <h2>Öne Çıkan Özellikler</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Masaya Özel QR Menü</h3>
+          <p>Her masa için benzersiz QR kodu. Müşteri okutunca doğrudan o masanın menüsüne ulaşır, garson çağırabilir.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Yapay Zeka Önerisi</h3>
+          <p>2 kısa soruyla müşterinin iştahına en uygun lezzeti bulan akıllı öneri motoru.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Çoklu Dil (TR / EN)</h3>
+          <p>Tüm menü içerikleri Türkçe ve İngilizce hazır. Tek tuşla dil değiştirme.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚖️</div>
+          <h3>Yasal Uyum</h3>
+          <p>11 Ekim 2025 tarihli dijital fiyat yönetmeliğine tam uyumlu. Ceza riski sıfır.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🐟</div>
+          <h3>Alerjen & Kalori Bilgisi</h3>
+          <p>Her ürün için malzeme listesi, alerjen ikonları ve kalori değerleri detay sayfasında gösterilir.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛒</div>
+          <h3>Sepet & Sipariş</h3>
+          <p>Müşteri masa başından sepet oluşturur, onaylar; garson anında bildirim alır.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Anlık Arama & Filtreler</h3>
+          <p>Popüler, vejetaryen, acılı, hafif, şefin seçimi filtrelerini anlık uygulayın.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Kurumsal Web Sitesi</h3>
+          <p>Restoran tanıtım sayfası, konum, sosyal medya bağlantıları ve Vercel altyapısıyla ultra hızlı yayın.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Teslimatlar -->
+    <div class="section">
+      <div class="section-eyebrow">Kapsam</div>
+      <h2>Teslim Edilecekler</h2>
+      <div class="deliverables">
+        <div class="deliv-row">
+          <div class="deliv-check">✓</div>
+          <div class="deliv-text"><strong>Tam kapsamlı QR menü uygulaması</strong> — tüm kategoriler, ürünler, görseller ve içerikler yerleştirilmiş biçimde</div>
+        </div>
+        <div class="deliv-row">
+          <div class="deliv-check">✓</div>
+          <div class="deliv-text"><strong>Kurumsal web sitesi</strong> — SEO optimizasyonlu, mobil uyumlu, hızlı yüklenen</div>
+        </div>
+        <div class="deliv-row">
+          <div class="deliv-check">✓</div>
+          <div class="deliv-text"><strong>Masa başına QR kodları</strong> — baskıya hazır, yüksek çözünürlüklü PDF formatında</div>
+        </div>
+        <div class="deliv-row">
+          <div class="deliv-check">✓</div>
+          <div class="deliv-text"><strong>Vercel üzerinde canlı yayın</strong> — özel domain bağlantısı, SSL sertifikası dahil</div>
+        </div>
+        <div class="deliv-row">
+          <div class="deliv-check">✓</div>
+          <div class="deliv-text"><strong>Menü içerik eğitimi</strong> — ürün güncelleme ve yönetim paneli kullanımı</div>
+        </div>
+        <div class="deliv-row">
+          <div class="deliv-check">✓</div>
+          <div class="deliv-text"><strong>30 günlük ücretsiz destek</strong> — teslimat sonrası sorunlar için öncelikli yanıt garantisi</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Fiyatlandırma -->
+    <div class="section">
+      <div class="section-eyebrow">Fiyatlandırma</div>
+      <h2>Yatırım Özeti</h2>
+      <div class="pricing-table">
+        <div class="pricing-row highlight">
+          <div class="pricing-icon">🚀</div>
+          <div class="pricing-label">
+            <div class="pl-title">Kurulum Paketi</div>
+            <div class="pl-sub">Web sitesi + QR menü sistemi · Tek seferlik ödeme</div>
+          </div>
+          <div>
+            <div class="pricing-amount">25.000 ₺</div>
+            <div class="pricing-period">tek seferlik</div>
+          </div>
+        </div>
+        <div class="pricing-row">
+          <div class="pricing-icon">🔧</div>
+          <div class="pricing-label">
+            <div class="pl-title">Aylık Bakım &amp; Destek</div>
+            <div class="pl-sub">Menü güncellemeleri, teknik destek, hosting yönetimi, güvenlik yamaları</div>
+          </div>
+          <div>
+            <div class="pricing-amount">1.000 ₺</div>
+            <div class="pricing-period">/ay</div>
+          </div>
+        </div>
+        <div class="pricing-row" style="background:#F9F7F2;">
+          <div class="pricing-icon">📊</div>
+          <div class="pricing-label">
+            <div class="pl-title" style="color:#555; font-weight:600; font-size:12px;">İlk yıl toplam yatırım</div>
+            <div class="pl-sub">Kurulum + 12 ay bakım</div>
+          </div>
+          <div>
+            <div class="pricing-amount" style="font-size:15px;">37.000 ₺</div>
+            <div class="pricing-period">≈ 3.083 ₺/ay</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-banner">
+        <div class="legal-icon">🛡️</div>
+        <div>
+          <div class="lt-title">Yasal Uyum Garantisi</div>
+          <div class="lt-desc">
+            Türkiye'de 11 Ekim 2025 tarihinde yürürlüğe giren dijital fiyat listesi yönetmeliğine tam uyum sağlanmaktadır.
+            Ticaret Bakanlığı denetimine hazır, güncel ve belgeli.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Zaman çizelgesi -->
+    <div class="section">
+      <div class="section-eyebrow">Proje Takvimi</div>
+      <h2>Teslim Süreci — 4 Hafta</h2>
+      <div class="timeline">
+        <div class="tl-row">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content">
+            <div class="tl-week">Hafta 1</div>
+            <div class="tl-title">Keşif &amp; Tasarım</div>
+            <div class="tl-desc">Menü içerikleri, görseller ve marka varlıkları toplanır. Renk paleti ve tipografi onaylanır.</div>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content">
+            <div class="tl-week">Hafta 2</div>
+            <div class="tl-title">Geliştirme</div>
+            <div class="tl-desc">QR menü uygulaması ve web sitesi kodlanır. Tüm ürünler, fiyatlar ve alerjen bilgileri işlenir.</div>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content">
+            <div class="tl-week">Hafta 3</div>
+            <div class="tl-title">Test &amp; Revizyon</div>
+            <div class="tl-desc">Müşteri geri bildirimi alınır, 2 tura kadar revizyon yapılır. Tüm cihazlarda test edilir.</div>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-left"><div class="tl-dot" style="background:#3FC1CB;"></div></div>
+          <div class="tl-content">
+            <div class="tl-week">Hafta 4</div>
+            <div class="tl-title">Canlıya Alma &amp; Eğitim</div>
+            <div class="tl-desc">Sistem yayına alınır, QR kodlar teslim edilir, ekip eğitimi verilir.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Neden biz -->
+    <div class="section">
+      <div class="section-eyebrow">Güvence</div>
+      <h2>Neden Bu Çözüm?</h2>
+      <p>
+        Piyasadaki hazır menü sistemlerinin aksine bu çözüm <strong>tamamen size özel</strong> geliştirilmektedir:
+        kendi domaininizde, kendi markanızla, üçüncü taraf abonelik bağımlılığı olmadan.
+        Aylık bakım bedeli sadece teknik desteği değil, menü güncellemelerini, yeni sezon ürün eklemelerini
+        ve sistem performans takibini de kapsar. <strong>Yatırımınız ilk yılda kendini amorti eder.</strong>
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h3>Harekete Geçmeye Hazır mısınız?</h3>
+      <p>Bu teklif 30 gün geçerlidir. Hemen iletişime geçin, projenizi birlikte başlatalım.</p>
+      <div class="cta-contact">
+        <div class="cta-item"><span>E-posta</span>— ekleyiniz —</div>
+        <div class="cta-item"><span>Telefon</span>— ekleyiniz —</div>
+        <div class="cta-item"><span>Web</span>— ekleyiniz —</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-note">
+    Bu teklif gizlidir ve yalnızca Karadeniz Balık Batıpark yönetimine yöneliktir. ·
+    Fiyatlar KDV hariçtir. · Teklif geçerlilik süresi: 30 gün.
+  </div>
+
+</div>
+</body>
+</html>

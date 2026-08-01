@@ -594,6 +594,37 @@ export default function QrMenuDemo() {
         .qrm-demonote{ text-align:center; font-size:9.5px; color:rgba(247,242,228,0.4); margin-top:9px; }
 
         .qrm-footercap{ margin-top:20px; font-size:10.5px; color:rgba(247,242,228,0.4); text-align:center; position:relative; z-index:2; max-width:340px; line-height:1.5; }
+
+        @media (max-width: 600px) {
+          .qrm-root {
+            padding: 0;
+          }
+          .qrm-topcap,
+          .qrm-brandrow,
+          .qrm-footercap,
+          .qrm-skyline {
+            display: none;
+          }
+          .qrm-phone {
+            width: 100vw;
+            height: 100vh;
+            max-width: 100vw;
+            border-radius: 0;
+            padding: 0;
+            background: none;
+            box-shadow: none;
+          }
+          .qrm-screen {
+            border-radius: 0;
+          }
+          .qrm-notch,
+          .qrm-status {
+            display: none;
+          }
+          .qrm-table {
+            margin: 12px auto 6px;
+          }
+        }
       `}</style>
 
       <svg className="qrm-skyline" viewBox="0 0 1200 200" preserveAspectRatio="none">
