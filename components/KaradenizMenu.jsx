@@ -403,7 +403,9 @@ export default function QrMenuDemo() {
         .qrm-brandimg{ height:76px; width:auto; border-radius:14px; box-shadow:0 10px 26px rgba(0,0,0,0.35); }
 
         .qrm-phone{
-          position:relative; z-index:2; height:min(800px,86vh); aspect-ratio:6/19; max-width:92vw;
+          position:relative; z-index:2;
+          width:min(390px, 94vw);
+          height:min(844px, calc(min(390px, 94vw) * 844 / 390));
           border-radius:44px; padding:12px;
           background:linear-gradient(160deg,#1c1c1e,#050505);
           box-shadow:0 40px 90px -20px rgba(0,0,0,0.65), 0 0 0 1px rgba(255,255,255,0.06) inset;
