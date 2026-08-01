@@ -505,7 +505,7 @@ export default function QrMenuDemo() {
 
         .qrm-cats{ display:flex; gap:8px; padding:14px 16px 4px; overflow-x:auto; flex-shrink:0; scrollbar-width:none; }
         .qrm-cats::-webkit-scrollbar{ display:none; }
-        .qrm-cat{ display:flex; flex-direction:column; align-items:center; gap:5px; cursor:pointer; padding:9px 13px; border-radius:14px; min-width:62px; border:1px solid var(--line); background:rgba(255,255,255,0.025); }
+        .qrm-cat{ display:flex; flex-direction:column; align-items:center; gap:5px; cursor:pointer; padding:9px 13px; border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,0.025); }
         .qrm-cat.active{ background:linear-gradient(135deg,rgba(212,175,106,0.16),rgba(212,175,106,0.05)); border-color:rgba(212,175,106,0.45); }
         .qrm-cat span{ font-size:9px; font-weight:700; color:rgba(247,242,228,0.65); text-align:center; white-space:nowrap; }
         .qrm-cat.active span{ color:var(--gold-100); }
