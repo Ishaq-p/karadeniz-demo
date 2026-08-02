@@ -1,0 +1,1119 @@
+{
+    "restaurant": "Yaka Restaurant & Lounge & Coffee",
+    "source_url": "https://yaka.menuluka.com/",
+    "currency": "TRY",
+    "menu": {
+        "KAHVALTILAR": [
+            {
+                "name": "Günün Çorbası",
+                "price": 120.00,
+                "url": "https://yaka.menuluka.com/urun/gunun-corbasi"
+            },
+            {
+                "name": "Serpme Kahvaltı",
+                "price": 1375.00,
+                "url": "https://yaka.menuluka.com/urun/serpme-kahvalti"
+            },
+            {
+                "name": "Kahvaltı Tabağı",
+                "price": 525.00,
+                "url": "https://yaka.menuluka.com/urun/kahvalti-tabagi"
+            },
+            {
+                "name": "Sade Omlet",
+                "price": 145.00,
+                "url": "https://yaka.menuluka.com/urun/sade-omlet"
+            },
+            {
+                "name": "Sahanda Yumurta",
+                "price": 135.00,
+                "url": "https://yaka.menuluka.com/urun/sahanda-yumurta"
+            },
+            {
+                "name": "Peynirli Omlet",
+                "price": 185.00,
+                "url": "https://yaka.menuluka.com/urun/peynirli-omlet"
+            },
+            {
+                "name": "Pastırmalı Yumurta",
+                "price": 410.00,
+                "url": "https://yaka.menuluka.com/urun/pastirmali-yumurta"
+            },
+            {
+                "name": "Sucuklu Yumurta",
+                "price": 350.00,
+                "url": "https://yaka.menuluka.com/urun/sucuklu-yumurta"
+            },
+            {
+                "name": "Kavurmalı Yumurta",
+                "price": 410.00,
+                "url": "https://yaka.menuluka.com/urun/kavurmali-yumurta"
+            },
+            {
+                "name": "Karışık Omlet",
+                "price": 320.00,
+                "url": "https://yaka.menuluka.com/urun/karisik-omlet"
+            },
+            {
+                "name": "Menemen",
+                "price": 210.00,
+                "url": "https://yaka.menuluka.com/urun/melemen"
+            },
+            {
+                "name": "Kuymak",
+                "price": 260.00,
+                "url": "https://yaka.menuluka.com/urun/kuymak"
+            },
+            {
+                "name": "Pişi Tabağı",
+                "price": 120.00,
+                "url": "https://yaka.menuluka.com/urun/pisi-tabagi"
+            },
+            {
+                "name": "Cevizli Atom",
+                "price": 105.00,
+                "url": "https://yaka.menuluka.com/urun/cevizli-atom"
+            },
+            {
+                "name": "Kırçan Kavurma",
+                "price": 175.00,
+                "url": "https://yaka.menuluka.com/urun/kircan-kavurma"
+            },
+            {
+                "name": "Yoğurtlu Reyyani",
+                "price": 105.00,
+                "url": "https://yaka.menuluka.com/urun/yogurtlu-reyyani"
+            },
+            {
+                "name": "Sıcak Tabağı",
+                "price": 185.00,
+                "url": "https://yaka.menuluka.com/urun/sicak-tabagi"
+            },
+            {
+                "name": "Yaka Simit",
+                "price": 225.00,
+                "url": "https://yaka.menuluka.com/urun/yaka-simit"
+            }
+        ],
+        "TOSTLAR": [
+            {
+                "name": "Karışık Tost",
+                "price": 375.00,
+                "url": "https://yaka.menuluka.com/urun/karisik-tost"
+            },
+            {
+                "name": "Kaşarlı Tost",
+                "price": 325.00,
+                "url": "https://yaka.menuluka.com/urun/kasarli-tost"
+            },
+            {
+                "name": "Sucuklu Tost",
+                "price": 340.00,
+                "url": "https://yaka.menuluka.com/urun/sucuklu-tost"
+            },
+            {
+                "name": "Yaka Special Tost",
+                "price": 445.00,
+                "url": "https://yaka.menuluka.com/urun/yaka-special-tost"
+            }
+        ],
+        "ATIŞTIRMALIKLAR": [
+            {
+                "name": "Cızbız Köfte",
+                "price": 375.00,
+                "url": "https://yaka.menuluka.com/urun/cizbiz-kofte"
+            },
+            {
+                "name": "Cips Tabağı",
+                "price": 175.00,
+                "url": "https://yaka.menuluka.com/urun/cips-tabagi"
+            },
+            {
+                "name": "Çıtır Tavuk Sepeti",
+                "price": 295.00,
+                "url": "https://yaka.menuluka.com/urun/citir-tavuk-sepeti"
+            },
+            {
+                "name": "Çiçek Sosis",
+                "price": 285.00,
+                "url": "https://yaka.menuluka.com/urun/cicek-sosis"
+            },
+            {
+                "name": "Çocuk Sıpagetti",
+                "price": 195.00,
+                "url": "https://yaka.menuluka.com/urun/cocuk-sipagetti"
+            },
+            {
+                "name": "İçli Tavuk",
+                "price": 225.00,
+                "url": "https://yaka.menuluka.com/urun/icli-tavuk"
+            },
+            {
+                "name": "Mini Festival",
+                "price": 175.00,
+                "url": "https://yaka.menuluka.com/urun/mini-festival"
+            },
+            {
+                "name": "Sosis Tabağı",
+                "price": 360.00,
+                "url": "https://yaka.menuluka.com/urun/sossis-tabagi"
+            },
+            {
+                "name": "Börek Sepeti",
+                "price": 280.00,
+                "url": "https://yaka.menuluka.com/urun/borek-sepeti"
+            },
+            {
+                "name": "Yaka Çıtır Sepeti",
+                "price": 360.00,
+                "url": "https://yaka.menuluka.com/urun/yaka-citir-sepeti"
+            }
+        ],
+        "MAKARNALAR": [
+            {
+                "name": "Etli Noodle",
+                "price": 560.00,
+                "url": "https://yaka.menuluka.com/urun/etli-noodle"
+            },
+            {
+                "name": "Fettucuni Alfredo",
+                "price": 350.00,
+                "url": "https://yaka.menuluka.com/urun/fettucuni-alfredo"
+            },
+            {
+                "name": "Köfteli Linguine",
+                "price": 485.00,
+                "url": "https://yaka.menuluka.com/urun/kofteli-lingoni"
+            },
+            {
+                "name": "Penna Arabiatta",
+                "price": 360.00,
+                "url": "https://yaka.menuluka.com/urun/penna-arabiatta"
+            },
+            {
+                "name": "Sebzeli Noodle",
+                "price": 325.00,
+                "url": "https://yaka.menuluka.com/urun/sebzeli-noodle"
+            },
+            {
+                "name": "Spagetti Bolenez",
+                "price": 360.00,
+                "url": "https://yaka.menuluka.com/urun/sipagetti-bolenez"
+            },
+            {
+                "name": "Sıpagetti Napolitan",
+                "price": 260.00,
+                "url": "https://yaka.menuluka.com/urun/sipagetti-napolitan"
+            },
+            {
+                "name": "Tavuk Linguine",
+                "price": 385.00,
+                "url": "https://yaka.menuluka.com/urun/tavuk-lingoni"
+            },
+            {
+                "name": "Tavuklu Noodle",
+                "price": 360.00,
+                "url": "https://yaka.menuluka.com/urun/tavuklu-noodle"
+            }
+        ],
+        "WRAPLAR": [
+            {
+                "name": "Biftekli Wrap",
+                "price": 535.00,
+                "url": "https://yaka.menuluka.com/urun/biftekli-wrap"
+            },
+            {
+                "name": "Kaburga Wrap",
+                "price": 545.00,
+                "url": "https://yaka.menuluka.com/urun/kaburga-wrap"
+            },
+            {
+                "name": "Tavuklu Wrap",
+                "price": 385.00,
+                "url": "https://yaka.menuluka.com/urun/tavuklu-wrap"
+            },
+            {
+                "name": "Vegan Wrap",
+                "price": 360.00,
+                "url": "https://yaka.menuluka.com/urun/vegan-wrap"
+            },
+            {
+                "name": "Yaka Gurme Wrap",
+                "price": 525.00,
+                "url": "https://yaka.menuluka.com/urun/yaka-gurme-wrap"
+            }
+        ],
+        "SALATALAR": [
+            {
+                "name": "Yaka Salata",
+                "price": 545.00,
+                "url": "https://yaka.menuluka.com/urun/yaka-salata"
+            },
+            {
+                "name": "Çıtır Tavuk Salata",
+                "price": 385.00,
+                "url": "https://yaka.menuluka.com/urun/citir-tavuk-salata"
+            },
+            {
+                "name": "Ton Balıklı Salata",
+                "price": 475.00,
+                "url": "https://yaka.menuluka.com/urun/ton-balikli-salata"
+            },
+            {
+                "name": "Beff Salata",
+                "price": 525.00,
+                "url": "https://yaka.menuluka.com/urun/beff-salata"
+            },
+            {
+                "name": "Bahçe Salata",
+                "price": 355.00,
+                "url": "https://yaka.menuluka.com/urun/bahce-salata"
+            },
+            {
+                "name": "Izgara Helim Salata",
+                "price": 410.00,
+                "url": "https://yaka.menuluka.com/urun/izgara-helim-salata"
+            },
+            {
+                "name": "Humus Salata",
+                "price": 355.00,
+                "url": "https://yaka.menuluka.com/urun/humus-salata"
+            },
+            {
+                "name": "Cevizli Roka Salata",
+                "price": 345.00,
+                "url": "https://yaka.menuluka.com/urun/cevizli-roka-salata"
+            },
+            {
+                "name": "Akdeniz Salata",
+                "price": 375.00,
+                "url": "https://yaka.menuluka.com/urun/akdeniz-salata"
+            },
+            {
+                "name": "Mevsim Salata",
+                "price": 215.00,
+                "url": "https://yaka.menuluka.com/urun/mevsim-salata"
+            },
+            {
+                "name": "Gavurdağ Salata",
+                "price": 445.00,
+                "url": "https://yaka.menuluka.com/urun/gavurdag-salata"
+            },
+            {
+                "name": "Çoban Salata",
+                "price": 275.00,
+                "url": "https://yaka.menuluka.com/urun/coban-salata"
+            },
+            {
+                "name": "Söğüs Tabağı",
+                "price": 200.00,
+                "url": "https://yaka.menuluka.com/urun/sogus-tabagi"
+            }
+        ],
+        "BOWL'LAR": [
+            {
+                "name": "Bowl Somon",
+                "price": 550.00,
+                "url": "https://yaka.menuluka.com/urun/bowl-somon"
+            },
+            {
+                "name": "Bowl Beef",
+                "price": 525.00,
+                "url": "https://yaka.menuluka.com/urun/bowl-beef"
+            },
+            {
+                "name": "Bowl Chicken",
+                "price": 445.00,
+                "url": "https://yaka.menuluka.com/urun/bowl-chickin"
+            },
+            {
+                "name": "Chef Bowl",
+                "price": 410.00,
+                "url": "https://yaka.menuluka.com/urun/chef-bowl"
+            },
+            {
+                "name": "Bowl Eggs",
+                "price": 385.00,
+                "url": "https://yaka.menuluka.com/urun/bowl-eggs"
+            },
+            {
+                "name": "Bowl Vejeteryen",
+                "price": 375.00,
+                "url": "https://yaka.menuluka.com/urun/bowl-vejeteryen"
+            }
+        ],
+        "PİDELER": [
+            {
+                "name": "Kapalı Kıymalı",
+                "price": 300.00,
+                "url": "https://yaka.menuluka.com/urun/kapali-kiymali"
+            },
+            {
+                "name": "Kapalı Kaşarlı",
+                "price": 260.00,
+                "url": "https://yaka.menuluka.com/urun/kapali-kasarli"
+            },
+            {
+                "name": "Kapalı Köy Peynirli",
+                "price": 350.00,
+                "url": "https://yaka.menuluka.com/urun/kapali-koy-peynirli"
+            },
+            {
+                "name": "Açık Kuşbaşılı Pide",
+                "price": 450.00,
+                "url": "https://yaka.menuluka.com/urun/kusbasili-pide"
+            },
+            {
+                "name": "Açık Kavurmalı",
+                "price": 480.00,
+                "url": "https://yaka.menuluka.com/urun/acik-kavurmali"
+            },
+            {
+                "name": "Açık Kıymalı",
+                "price": 450.00,
+                "url": "https://yaka.menuluka.com/urun/acik-kiymali"
+            },
+            {
+                "name": "Açık Pastırmalı",
+                "price": 480.00,
+                "url": "https://yaka.menuluka.com/urun/acik-pastirmali"
+            },
+            {
+                "name": "Açık Sucuklu",
+                "price": 425.00,
+                "url": "https://yaka.menuluka.com/urun/acik-sucuklu"
+            },
+            {
+                "name": "Açık Karışık Pide",
+                "price": 525.00,
+                "url": "https://yaka.menuluka.com/urun/acik-karisik-pide"
+            },
+            {
+                "name": "Açık Kaşarlı",
+                "price": 355.00,
+                "url": "https://yaka.menuluka.com/urun/acik-kasarli"
+            },
+            {
+                "name": "Açık Köy Peynirli",
+                "price": 400.00,
+                "url": "https://yaka.menuluka.com/urun/acik-koy-peynirli"
+            },
+            {
+                "name": "Sebzeli Kıymalı",
+                "price": 410.00,
+                "url": "https://yaka.menuluka.com/urun/sebzeli-kiymali"
+            },
+            {
+                "name": "Yağlı Yumurtalı",
+                "price": 255.00,
+                "url": "https://yaka.menuluka.com/urun/yagli-yumurtali"
+            },
+            {
+                "name": "Yaka Yağlı",
+                "price": 375.00,
+                "url": "https://yaka.menuluka.com/urun/yaka-yagli"
+            },
+            {
+                "name": "YAKA Special Pide",
+                "price": 650.00,
+                "url": "https://yaka.menuluka.com/urun/yari-special-pide"
+            },
+            {
+                "name": "Lahmacun",
+                "price": 110.00,
+                "url": "https://yaka.menuluka.com/urun/lahmacun"
+            }
+        ],
+        "BURGERLER": [
+            {
+                "name": "Hot Barbekü Burger",
+                "price": 530.00,
+                "url": "https://yaka.menuluka.com/urun/hat-barbecu-burger"
+            },
+            {
+                "name": "Yaka Kaburga Burger",
+                "price": 525.00,
+                "url": "https://yaka.menuluka.com/urun/kaburge-burger"
+            },
+            {
+                "name": "Cheese Burger",
+                "price": 510.00,
+                "url": "https://yaka.menuluka.com/urun/chisse-burger"
+            },
+            {
+                "name": "Chicken Burger",
+                "price": 490.00,
+                "url": "https://yaka.menuluka.com/urun/chikkin-burger"
+            },
+            {
+                "name": "Mini Burger",
+                "price": 395.00,
+                "url": "https://yaka.menuluka.com/urun/mini-burger"
+            },
+            {
+                "name": "Klasik Burger",
+                "price": 500.00,
+                "url": "https://yaka.menuluka.com/urun/klasik-burger"
+            }
+        ],
+        "TAVA YEMEKLER": [
+            {
+                "name": "Mac and Chesee Beef",
+                "price": 615.00,
+                "url": "https://yaka.menuluka.com/urun/meccihise-beef"
+            },
+            {
+                "name": "Et Fajita",
+                "price": 650.00,
+                "url": "https://yaka.menuluka.com/urun/et-fajita"
+            },
+            {
+                "name": "Bademli Dana Kavurma",
+                "price": 625.00,
+                "url": "https://yaka.menuluka.com/urun/bademli-dana-kavurma"
+            },
+            {
+                "name": "Saç Kavurma",
+                "price": 595.00,
+                "url": "https://yaka.menuluka.com/urun/sac-kavurma"
+            },
+            {
+                "name": "Çökertme Kebab",
+                "price": 620.00,
+                "url": "https://yaka.menuluka.com/urun/cokertme-kebab"
+            },
+            {
+                "name": "Güveçte Et Sote",
+                "price": 610.00,
+                "url": "https://yaka.menuluka.com/urun/guvecte-et-sote"
+            },
+            {
+                "name": "Köri Soslu Tavuk",
+                "price": 350.00,
+                "url": "https://yaka.menuluka.com/urun/kori-soslu-tavuk"
+            },
+            {
+                "name": "Mac and Chesee Tavuk",
+                "price": 375.00,
+                "url": "https://yaka.menuluka.com/urun/meccihise-tavuk"
+            },
+            {
+                "name": "Tavuk Çökertme",
+                "price": 365.00,
+                "url": "https://yaka.menuluka.com/urun/tavuk-cokertme"
+            },
+            {
+                "name": "Teryaki Soslu Tavuk",
+                "price": 370.00,
+                "url": "https://yaka.menuluka.com/urun/teryaki-soslu-tavuk"
+            },
+            {
+                "name": "Mexican Soslu Tavuk",
+                "price": 375.00,
+                "url": "https://yaka.menuluka.com/urun/mexican-soslu-tavuk"
+            },
+            {
+                "name": "Güveçte Tovuk Sote",
+                "price": 345.00,
+                "url": "https://yaka.menuluka.com/urun/guvecte-tovuk-sote"
+            },
+            {
+                "name": "Dağ Kekikli Tavuk Kavurma",
+                "price": 325.00,
+                "url": "https://yaka.menuluka.com/urun/dag-kekikli-tavuk-kavurma"
+            },
+            {
+                "name": "Tavuk Fajita",
+                "price": 385.00,
+                "url": "https://yaka.menuluka.com/urun/tavuk-fajita"
+            },
+            {
+                "name": "Tavuk Saç Kavurma",
+                "price": 370.00,
+                "url": "https://yaka.menuluka.com/urun/tavuk-sac-kavurma"
+            }
+        ],
+        "IZGARALAR": [
+            {
+                "name": "Vali Kebap (4 kişilik)",
+                "price": 3850.00,
+                "url": "https://yaka.menuluka.com/urun/vali-kebap-4-kisilik"
+            },
+            {
+                "name": "Vali Kebap (2 Kişilik)",
+                "price": 2250.00,
+                "url": "https://yaka.menuluka.com/urun/vali-kebap"
+            },
+            {
+                "name": "Domatesli Kebap",
+                "price": 485.00,
+                "url": "https://yaka.menuluka.com/urun/domatesli-kebap"
+            },
+            {
+                "name": "Patlıcanlı Kebap",
+                "price": 550.00,
+                "url": "https://yaka.menuluka.com/urun/patlicanli-kebap"
+            },
+            {
+                "name": "Yaka Special",
+                "price": 745.00,
+                "url": "https://yaka.menuluka.com/urun/yaka-special"
+            },
+            {
+                "name": "Antrikot Izgara",
+                "price": 620.00,
+                "url": "https://yaka.menuluka.com/urun/antrikot-izgara"
+            },
+            {
+                "name": "Kebap İskender",
+                "price": 575.00,
+                "url": "https://yaka.menuluka.com/urun/kebap-iskender"
+            },
+            {
+                "name": "Fırın Beyti",
+                "price": 785.00,
+                "url": "https://yaka.menuluka.com/urun/firin-beyti"
+            },
+            {
+                "name": "Izgara Köfte",
+                "price": 490.00,
+                "url": "https://yaka.menuluka.com/urun/izgara-kofte-1"
+            },
+            {
+                "name": "Beyti Sarma",
+                "price": 575.00,
+                "url": "https://yaka.menuluka.com/urun/beyti-sarma"
+            },
+            {
+                "name": "Urfa Kebap",
+                "price": 455.00,
+                "url": "https://yaka.menuluka.com/urun/urfa-kebap"
+            },
+            {
+                "name": "Adana Kebap",
+                "price": 455.00,
+                "url": "https://yaka.menuluka.com/urun/adana-kebap"
+            },
+            {
+                "name": "Yoğurtlu Adana",
+                "price": 495.00,
+                "url": "https://yaka.menuluka.com/urun/yogurtlu-adana"
+            },
+            {
+                "name": "Karışık Izgara",
+                "price": 845.00,
+                "url": "https://yaka.menuluka.com/urun/karisik-izgara"
+            },
+            {
+                "name": "Kuzu Şiş",
+                "price": 645.00,
+                "url": "https://yaka.menuluka.com/urun/kuzu-sis"
+            },
+            {
+                "name": "Dana Şiş",
+                "price": 695.00,
+                "url": "https://yaka.menuluka.com/urun/dana-sis"
+            },
+            {
+                "name": "Kuzu Pirzola",
+                "price": 785.00,
+                "url": "https://yaka.menuluka.com/urun/kuzu-pirzola"
+            },
+            {
+                "name": "Kuzu Şaşlık",
+                "price": 685.00,
+                "url": "https://yaka.menuluka.com/urun/kuzu-saslik"
+            },
+            {
+                "name": "Kanat Izgara",
+                "price": 355.00,
+                "url": "https://yaka.menuluka.com/urun/kanat-izgara-1"
+            },
+            {
+                "name": "Tavuk Şiş",
+                "price": 290.00,
+                "url": "https://yaka.menuluka.com/urun/tavuk-sis"
+            },
+            {
+                "name": "Tavuk Pirzola",
+                "price": 320.00,
+                "url": "https://yaka.menuluka.com/urun/tavuk-pirzola-1"
+            },
+            {
+                "name": "Ali Nazık Kebap",
+                "price": 495.00,
+                "url": "https://yaka.menuluka.com/urun/ali-nazik-kebap"
+            },
+            {
+                "name": "Yoğurtlu Urfa",
+                "price": 495.00,
+                "url": "https://yaka.menuluka.com/urun/yogurtlu-urfa"
+            }
+        ],
+        "MANGAL SÖLENİ": [
+            {
+                "name": "Dana Antrikot kg",
+                "price": null,
+                "price_note": "Fiyat Sorunuz",
+                "url": "https://yaka.menuluka.com/urun/dana-antrikot"
+            },
+            {
+                "name": "Dana Bonfile kg",
+                "price": 1900.00,
+                "url": "https://yaka.menuluka.com/urun/dana-bonfile"
+            },
+            {
+                "name": "Izgara Köfte kg",
+                "price": null,
+                "price_note": "Fiyat Sorunuz",
+                "url": "https://yaka.menuluka.com/urun/izgara-kofte"
+            },
+            {
+                "name": "Kanat Izgara Kg",
+                "price": 1350.00,
+                "url": "https://yaka.menuluka.com/urun/kanat-izgara"
+            },
+            {
+                "name": "Kuzu Kemikli",
+                "price": null,
+                "price_note": "Fiyat Sorunuz",
+                "url": "https://yaka.menuluka.com/urun/kuzu-kemikli"
+            },
+            {
+                "name": "Tavuk Pirzola kg",
+                "price": null,
+                "price_note": "Fiyat Sorunuz",
+                "url": "https://yaka.menuluka.com/urun/tavuk-pirzola"
+            }
+        ],
+        "PİZZALAR": [
+            {
+                "name": "Pizza Turco",
+                "price": 525.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-torko"
+            },
+            {
+                "name": "Pizza Mix",
+                "price": 510.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-mix"
+            },
+            {
+                "name": "Pizza Tonno",
+                "price": 465.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-tonno"
+            },
+            {
+                "name": "Pizza Pepparoni",
+                "price": 450.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-peparon"
+            },
+            {
+                "name": "Pizza Chicken",
+                "price": 410.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-chikken"
+            },
+            {
+                "name": "Pizza Funghi",
+                "price": 450.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-fung"
+            },
+            {
+                "name": "Ege Pizza",
+                "price": 400.00,
+                "url": "https://yaka.menuluka.com/urun/ege-pizza"
+            },
+            {
+                "name": "Pizza Margarita",
+                "price": 365.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-margarita"
+            },
+            {
+                "name": "Pizza Vejeteryan",
+                "price": 410.00,
+                "url": "https://yaka.menuluka.com/urun/pizza-vejeteryan"
+            }
+        ],
+        "MANTILAR": [
+            {
+                "name": "Kayseri Mantısı",
+                "price": 360.00,
+                "url": "https://yaka.menuluka.com/urun/kayseri-mamti"
+            },
+            {
+                "name": "Özbek Mantı",
+                "price": 385.00,
+                "url": "https://yaka.menuluka.com/urun/ozbek-manti"
+            },
+            {
+                "name": "Sinop Mantı",
+                "price": 405.00,
+                "url": "https://yaka.menuluka.com/urun/sinop-manti"
+            }
+        ],
+        "ÇAYLAR": [
+            {
+                "name": "Çay",
+                "price": 50.00,
+                "url": "https://yaka.menuluka.com/urun/cay"
+            },
+            {
+                "name": "Fincan Çay",
+                "price": 80.00,
+                "url": "https://yaka.menuluka.com/urun/fincan-cay"
+            },
+            {
+                "name": "Bitki çayları",
+                "price": 150.00,
+                "url": "https://yaka.menuluka.com/urun/bitki-caylari"
+            },
+            {
+                "name": "Demlik Çay",
+                "price": 475.00,
+                "url": "https://yaka.menuluka.com/urun/demlik-cay"
+            }
+        ],
+        "KAHVELER": [
+            {
+                "name": "Affogato",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/affogato"
+            },
+            {
+                "name": "Americano",
+                "price": 150.00,
+                "url": "https://yaka.menuluka.com/urun/americano"
+            },
+            {
+                "name": "Americano Duble",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/americano-duble"
+            },
+            {
+                "name": "Cappuccino",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/cappuccino"
+            },
+            {
+                "name": "Espresso",
+                "price": 100.00,
+                "url": "https://yaka.menuluka.com/urun/espresso"
+            },
+            {
+                "name": "Filtre Kahve",
+                "price": 150.00,
+                "url": "https://yaka.menuluka.com/urun/filtre-kahve"
+            },
+            {
+                "name": "Latte",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/latte"
+            },
+            {
+                "name": "Latte Duble",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/latte-duble"
+            },
+            {
+                "name": "Misto",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/misto"
+            }
+        ],
+        "SICAK İÇECEKLER": [
+            {
+                "name": "Ballı Süt",
+                "price": 100.00,
+                "url": "https://yaka.menuluka.com/urun/balli-sut"
+            },
+            {
+                "name": "Chai Tea Latte",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/chai-tea-latte"
+            },
+            {
+                "name": "Sahlep",
+                "price": 165.00,
+                "url": "https://yaka.menuluka.com/urun/sahlep"
+            },
+            {
+                "name": "Sıcak Çikolata",
+                "price": 165.00,
+                "url": "https://yaka.menuluka.com/urun/sicak-cikolata"
+            },
+            {
+                "name": "Sıcak Süt",
+                "price": 60.00,
+                "url": "https://yaka.menuluka.com/urun/sicak-sut"
+            }
+        ],
+        "AROMALI KAHVELER": [
+            {
+                "name": "Hazelnut Latte soğuk",
+                "price": 200.00,
+                "url": "https://yaka.menuluka.com/urun/hazelya-latte-duble"
+            },
+            {
+                "name": "Vanilya Latte Soğuk",
+                "price": 210.00,
+                "url": "https://yaka.menuluka.com/urun/vanilya-latte-duble"
+            },
+            {
+                "name": "Vanilya Latte",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/vanilya-latte"
+            },
+            {
+                "name": "Toffienut Latte Soğuk",
+                "price": 200.00,
+                "url": "https://yaka.menuluka.com/urun/toffiya-latte-duble"
+            },
+            {
+                "name": "Toffienut Latte",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/toffiya-latte"
+            },
+            {
+                "name": "Strawberry Latte Soğuk",
+                "price": 200.00,
+                "url": "https://yaka.menuluka.com/urun/strawya-latte-duble"
+            },
+            {
+                "name": "Strawya Latte",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/strawya-latte"
+            },
+            {
+                "name": "Mocha Duble",
+                "price": 210.00,
+                "url": "https://yaka.menuluka.com/urun/mocha-duble"
+            },
+            {
+                "name": "Mocha",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/mocha"
+            },
+            {
+                "name": "Caramel Latte",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/caramel-latte"
+            },
+            {
+                "name": "Hazelnut Latte",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/hazelya-latte"
+            },
+            {
+                "name": "Cookie Latte Soğuk",
+                "price": 200.00,
+                "url": "https://yaka.menuluka.com/urun/cookiya-latte-duble"
+            },
+            {
+                "name": "Cookie Latte",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/cookiya-latte"
+            },
+            {
+                "name": "Chocolate Latte soğuk",
+                "price": 210.00,
+                "url": "https://yaka.menuluka.com/urun/chocoya-latte-duble"
+            },
+            {
+                "name": "Chocoya Latte",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/chocoya-latte"
+            },
+            {
+                "name": "Caramya Macchiato Duble",
+                "price": 210.00,
+                "url": "https://yaka.menuluka.com/urun/caramya-macchiato-duble"
+            },
+            {
+                "name": "Caramya Macchiato",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/caramya-macchiato"
+            },
+            {
+                "name": "Caramel Latte Soğuk",
+                "price": 210.00,
+                "url": "https://yaka.menuluka.com/urun/caramel-latte-duble"
+            }
+        ],
+        "TÜRK KAHVELERİ": [
+            {
+                "name": "D. Sakızlı Türk Kahvesi",
+                "price": 120.00,
+                "url": "https://yaka.menuluka.com/urun/d-sakizli-turk-kahvesi"
+            },
+            {
+                "name": "Dibek Kahvesi",
+                "price": 120.00,
+                "url": "https://yaka.menuluka.com/urun/dibek-kahvesi"
+            },
+            {
+                "name": "Türk Kahvesi",
+                "price": 80.00,
+                "url": "https://yaka.menuluka.com/urun/turk-kahvesi"
+            },
+            {
+                "name": "Double Türk Kahvesi",
+                "price": 150.00,
+                "url": "https://yaka.menuluka.com/urun/double-turk-kahvesi"
+            }
+        ],
+        "SOĞUK İÇECEKLER": [
+            {
+                "name": "Churchill",
+                "price": 150.00,
+                "url": "https://yaka.menuluka.com/urun/churchill"
+            },
+            {
+                "name": "Coco Energiepresso",
+                "price": 230.00,
+                "url": "https://yaka.menuluka.com/urun/coco-energiepresso"
+            },
+            {
+                "name": "Cool Lime",
+                "price": 160.00,
+                "url": "https://yaka.menuluka.com/urun/cool-lime"
+            },
+            {
+                "name": "Cool Lime Mango",
+                "price": 175.00,
+                "url": "https://yaka.menuluka.com/urun/cool-lime-mango"
+            },
+            {
+                "name": "Hibiscus",
+                "price": 160.00,
+                "url": "https://yaka.menuluka.com/urun/hibiscus"
+            },
+            {
+                "name": "Limonata",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/limonata"
+            },
+            {
+                "name": "Orange Espresso",
+                "price": 210.00,
+                "url": "https://yaka.menuluka.com/urun/orange-espresso"
+            },
+            {
+                "name": "Portakal Suyu",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/portakal-suyu"
+            }
+        ],
+        "MILK SHAKE": [
+            {
+                "name": "Çikolata Milksaheke",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/cikolata-milksaheke"
+            },
+            {
+                "name": "Çilek Milksaheke",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/cilek-milksaheke"
+            },
+            {
+                "name": "Karamel Milksaheke",
+                "price": 190.00,
+                "url": "https://yaka.menuluka.com/urun/karamel-milksaheke"
+            },
+            {
+                "name": "Oreo Milksaheke",
+                "price": 220.00,
+                "url": "https://yaka.menuluka.com/urun/oreo-milksaheke"
+            },
+            {
+                "name": "Vanilya Milksaheke",
+                "price": 180.00,
+                "url": "https://yaka.menuluka.com/urun/vanilya-milksaheke"
+            }
+        ],
+        "BUBBLE TEA": [
+            {
+                "name": "Çilekli Bubble",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/cilekli"
+            },
+            {
+                "name": "Mango",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/mango"
+            },
+            {
+                "name": "Yaban Mersini",
+                "price": 170.00,
+                "url": "https://yaka.menuluka.com/urun/yaban-mersini"
+            }
+        ],
+        "DONDURMALAR": [
+            {
+                "name": "Kavun 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/kavun-1-top"
+            },
+            {
+                "name": "Vişne 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/visne-1-top"
+            },
+            {
+                "name": "Limon 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/limon-1-top"
+            },
+            {
+                "name": "Karamel 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/karamel-1-top"
+            },
+            {
+                "name": "Çikolata 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/cikolata-1-top"
+            },
+            {
+                "name": "Çilek 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/cilek-1-top"
+            },
+            {
+                "name": "Vanilya 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/vanilya-1-top"
+            },
+            {
+                "name": "Blue Sky 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/blue-sky-1-top"
+            },
+            {
+                "name": "Oreo",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/oreo"
+            },
+            {
+                "name": "Bal Badem 1 Top",
+                "price": 70.00,
+                "url": "https://yaka.menuluka.com/urun/bal-badem-1-top"
+            }
+        ],
+        "TATLILAR ve ÇEREZLER": [
+            {
+                "name": "Ekler",
+                "price": 150.00,
+                "url": "https://yaka.menuluka.com/urun/ekler"
+            },
+            {
+                "name": "Tatlı",
+                "price": 245.00,
+                "url": "https://yaka.menuluka.com/urun/tatli"
+            },
+            {
+                "name": "Çerez Tabağı",
+                "price": 245.00,
+                "url": "https://yaka.menuluka.com/urun/cerez-tabagi"
+            }
+        ]
+    }
+}
