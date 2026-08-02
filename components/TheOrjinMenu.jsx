@@ -252,7 +252,7 @@ const ITEMS = [
     desc: { tr: "Yaz meyveli, hafif ve serinletici bir karışım.", en: "A light, cooling summer-fruit blend." }
   },
   {
-    id: "orjinkaris", category: "hookah", price: 420, kcal: 0, tags: ["chef"], img: "https://picsum.photos/seed/orjinkaris/400/400",
+    id: "orjinkaris", category: "hookah", price: 420, kcal: 0, tags: ["chef"], img: "/karpuznane.png",
     allergens: [],
     ingredients: [{ n: "Özel meyve karışımı", a: "20 g" }, { n: "Buzlu kap servisi", a: "opsiyonel" }],
     name: { tr: "Orjin Özel Karışım", en: "The Orjin House Blend" },
@@ -261,21 +261,21 @@ const ITEMS = [
 
   // Kokteyl / Drinks (alkolsüz)
   {
-    id: "vespa", category: "drinks", price: 260, kcal: 180, tags: ["popular", "chef"], img: "https://picsum.photos/seed/vespa/400/400",
+    id: "vespa", category: "drinks", price: 260, kcal: 180, tags: ["popular", "chef"], img: "/cocktail.png",
     allergens: [],
     ingredients: [{ n: "Ananas suyu", a: "80 ml" }, { n: "Nane", a: "5 yaprak" }, { n: "Soda", a: "60 ml" }, { n: "Lime", a: "1/2 adet" }],
     name: { tr: "Vespa", en: "Vespa" },
     desc: { tr: "Ananas, nane ve limla hazırlanan imza alkolsüz kokteylimiz.", en: "Our signature alcohol-free cocktail with pineapple, mint and lime." }
   },
   {
-    id: "narekşi", category: "drinks", price: 220, kcal: 140, tags: ["light"], img: "https://picsum.photos/seed/nareksi/400/400",
+    id: "narekşi", category: "drinks", price: 220, kcal: 140, tags: ["light"], img: "/cocktail.png",
     allergens: [],
     ingredients: [{ n: "Nar ekşisi", a: "30 ml" }, { n: "Elma suyu", a: "80 ml" }, { n: "Soda", a: "60 ml" }],
     name: { tr: "Nar Ekşili Mocktail", en: "Pomegranate Mocktail" },
     desc: { tr: "Ekşi-tatlı dengeyle ferahlatan, nar ekşili soğuk içecek.", en: "A tangy-sweet, refreshing pomegranate cooler." }
   },
   {
-    id: "passion", category: "drinks", price: 230, kcal: 150, tags: ["popular"], img: "https://picsum.photos/seed/passion/400/400",
+    id: "passion", category: "drinks", price: 230, kcal: 150, tags: ["popular"], img: "/cocktail.png",
     allergens: [],
     ingredients: [{ n: "Passion fruit püresi", a: "40 g" }, { n: "Portakal suyu", a: "60 ml" }, { n: "Soda", a: "60 ml" }],
     name: { tr: "Passion Fruit Fizz", en: "Passion Fruit Fizz" },

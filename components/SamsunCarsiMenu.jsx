@@ -262,7 +262,7 @@ const ITEMS = [
     },
 
     {
-        id: "guvec", category: "tavayemekleri", price: 340, kcal: 480, tags: ["popular"], img: img(772518),
+        id: "guvec", category: "tavayemekleri", price: 340, kcal: 480, tags: ["popular"], img: img(5639381),
         allergens: [],
         ingredients: [{ n: "Dana kuşbaşı", a: "200 g" }, { n: "Sebze", a: "120 g" }, { n: "Domates sos", a: "80 g" }],
         name: { tr: "Güveçte Kuşbaşı", en: "Beef Casserole" },
@@ -469,7 +469,7 @@ export default function QrMenuDemo() {
         .qrm-legaltip b{ color:var(--gold-100); display:block; margin-top:6px; font-size:9.5px; }
 
         .qrm-hero{ position:relative; padding:14px 18px 24px; overflow:hidden; flex-shrink:0;
-          background:radial-gradient(120% 100% at 20% 0%, #1a5a52 0%, #0c332f 60%, #0a2a28 100%); }
+          background:radial-gradient(120% 100% at 20% 0%, #2c466e 0%, #1b3558 60%, #0B1B33 100%); }
         .qrm-hero-wave{ position:absolute; left:0; right:0; bottom:-2px; height:32px; }
         .qrm-greet{ display:flex; align-items:center; gap:8px; font-size:20px; font-weight:700; color:var(--cream); position:relative; z-index:2;}
         .qrm-greetsub{ font-size:11px; color:rgba(247,242,228,0.6); margin-top:3px; position:relative; z-index:2;}

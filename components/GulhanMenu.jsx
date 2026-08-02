@@ -169,7 +169,7 @@ const img = (id) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.j
 
 const ITEMS = [
   {
-    id: "mercimek", category: "starters", price: 110, kcal: 190, tags: ["popular", "light"], img: img(6270337),
+    id: "mercimek", category: "starters", price: 110, kcal: 190, tags: ["popular", "light"], img: img(1213710),
     allergens: [],
     ingredients: [{ n: "Kırmızı mercimek", a: "150 g" }, { n: "Soğan, havuç", a: "60 g" }, { n: "Tereyağı", a: "10 g" }],
     name: { tr: "Mercimek Çorbası", en: "Red Lentil Soup" },
@@ -183,7 +183,7 @@ const ITEMS = [
     desc: { tr: "İnce doğranmış mevsim sebzeleri, nar ekşili sosla.", en: "Finely diced seasonal vegetables with a pomegranate-molasses dressing." }
   },
   {
-    id: "sigarabor", category: "starters", price: 170, kcal: 310, tags: ["popular", "chef"], img: img(13979186),
+    id: "sigarabor", category: "starters", price: 170, kcal: 310, tags: ["popular", "chef"], img: img(1213710),
     allergens: ["gluten", "dairy"],
     ingredients: [{ n: "Yufka", a: "6 adet" }, { n: "Beyaz peynir", a: "120 g" }, { n: "Maydanoz", a: "10 g" }],
     name: { tr: "Sigara Böreği (6 adet)", en: "Cheese Rolls (6 pcs)" },
@@ -241,7 +241,7 @@ const ITEMS = [
     desc: { tr: "İçine kapatılarak pişirilen, sulu kuşbaşı etli özel pide.", en: "Sealed and baked with juicy diced beef and cheese inside." }
   },
   {
-    id: "lahmacun", category: "pide", price: 90, kcal: 260, tags: ["popular", "light"], img: img(15155326),
+    id: "lahmacun", category: "pide", price: 90, kcal: 260, tags: ["popular", "light"], img: img(6941020),
     allergens: ["gluten"],
     ingredients: [{ n: "İnce hamur", a: "1 adet" }, { n: "Kıyma harcı", a: "70 g" }, { n: "Maydanoz, limon", a: "20 g" }],
     name: { tr: "Lahmacun", en: "Lahmacun" },
@@ -256,7 +256,7 @@ const ITEMS = [
     desc: { tr: "Ev yapımı, soğuk servis.", en: "Homemade, served chilled." }
   },
   {
-    id: "salgam", category: "drinks", price: 55, kcal: 20, tags: ["veg", "light", "spicy"], img: img(8697894),
+    id: "salgam", category: "drinks", price: 55, kcal: 20, tags: ["veg", "light", "spicy"], img: img(6802983),
     allergens: [],
     ingredients: [{ n: "Şalgam suyu", a: "250 ml" }],
     name: { tr: "Şalgam Suyu", en: "Turnip Juice (Şalgam)" },
@@ -271,7 +271,7 @@ const ITEMS = [
   },
 
   {
-    id: "kunefe", category: "desserts", price: 170, kcal: 420, tags: ["popular", "chef"], img: img(6157050),
+    id: "kunefe", category: "desserts", price: 170, kcal: 420, tags: ["popular", "chef"], img: img(37825038),
     allergens: ["gluten", "dairy"],
     ingredients: [{ n: "Tel kadayıf", a: "120 g" }, { n: "Peynir", a: "80 g" }, { n: "Şerbet", a: "60 ml" }],
     name: { tr: "Künefe", en: "Künefe" },

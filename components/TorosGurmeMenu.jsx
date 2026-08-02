@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
-  Sword, Salad, Coffee, Wine, Cake, Sparkles, Bell, Search, X, Check,
+  Beef, Salad, Coffee, Wine, Cake, Sparkles, Bell, Search, X, Check,
   ChevronRight, Info, Star, Leaf, ShoppingBag, ShieldCheck, RefreshCw, Plus, Minus,
   MapPin, Hash, Moon, ChefHat, Feather, Milk, Wheat, Egg, ExternalLink, Navigation, Share2, Languages, ArrowLeft, Flame
 } from "lucide-react";
@@ -156,7 +156,7 @@ const UI = {
 
 const CATEGORIES = [
   { key: "baslangic", icon: Star, label: { tr: "Başlangıçlar", en: "Starters" } },
-  { key: "steak", icon: Sword, label: { tr: "Steak", en: "Steak" } },
+  { key: "steak", icon: Beef, label: { tr: "Steak", en: "Steak" } },
   { key: "kebap", icon: Flame, label: { tr: "Kebap", en: "Kebap" } },
   { key: "pide", icon: ChefHat, label: { tr: "Pide & Lahmacun", en: "Pide & Lahmacun" } },
   { key: "tatli", icon: Cake, label: { tr: "Tatlılar", en: "Desserts" } },
@@ -223,7 +223,7 @@ const img = (id) => {
 const ITEMS = [
   // Başlangıçlar
   { id: "ekmek_arasi", category: "baslangic", price: 200, kcal: 380, tags: ["popular", "chef"], img: img(1639562), allergens: ["gluten", "dairy"], ingredients: [{n:"Taze ekmek",a:"1 adet"},{n:"Kaşar peyniri",a:"60 g"},{n:"Pastırma",a:"40 g"}], name:{tr:"Eşkıya Arası",en:"Eşkıya Sandwich"}, desc:{tr:"Toros'un meşhur Eşkıya kebabından ilham alan özel ara.",en:"Special sandwich inspired by Toros's famous Eşkıya kebap."} },
-  { id: "capciner", category: "baslangic", price: 180, kcal: 320, tags: ["popular"], img: img(5945552), allergens: ["gluten","dairy","egg"], ingredients: [{n:"Ezme",a:"80 g"},{n:"Haydari",a:"60 g"},{n:"Patlıcan",a:"60 g"}], name:{tr:"Karışık Başlangıç Tabağı",en:"Mixed Starter Plate"}, desc:{tr:"Ezme, haydari ve közlenmiş patlıcan üçlüsü.",en:"A trio of ezme, haydari and roasted aubergine."} },
+  { id: "capciner", category: "baslangic", price: 180, kcal: 320, tags: ["popular"], img: img(1639562), allergens: ["gluten","dairy","egg"], ingredients: [{n:"Ezme",a:"80 g"},{n:"Haydari",a:"60 g"},{n:"Patlıcan",a:"60 g"}], name:{tr:"Karışık Başlangıç Tabağı",en:"Mixed Starter Plate"}, desc:{tr:"Ezme, haydari ve közlenmiş patlıcan üçlüsü.",en:"A trio of ezme, haydari and roasted aubergine."} },
   // Steak
   { id: "eskiya_kebab", category: "steak", price: 680, kcal: 780, tags: ["popular", "chef"], img: img(1251208), allergens: [], ingredients: [{n:"Premium dana eti",a:"300 g"},{n:"Özel sos",a:"30 ml"},{n:"Fırın patates",a:"150 g"}], name:{tr:"Eşkıya Kebabı",en:"Eşkıya Kebap"}, desc:{tr:"Toros Gurme'nin imza yemeği — parmak yenilen Eşkıya Kebabı.",en:"Toros Gurme's signature dish — the finger-licking Eşkıya Kebap."} },
   { id: "tbone", category: "steak", price: 920, kcal: 980, tags: ["popular", "chef"], img: img(410648), allergens: [], ingredients: [{n:"T-bone steak",a:"450 g"},{n:"Baharat",a:"5 g"},{n:"Kızarmış biber",a:"80 g"}], name:{tr:"T-Bone Steak",en:"T-Bone Steak"}, desc:{tr:"\"Keyfinin en değerli hali\" — kısık ateşte uzun süre pişirilmiş T-Bone.",en:"\"Pleasure at its most valuable\" — slow-cooked T-bone steak."} },
@@ -236,8 +236,8 @@ const ITEMS = [
   { id: "kiymali_pide", category: "pide", price: 300, kcal: 620, tags: ["popular"], img: img(1640774), allergens: ["gluten","egg"], ingredients: [{n:"Pide hamuru",a:"1 adet"},{n:"Kıymalı harç",a:"120 g"},{n:"Yumurta",a:"1 adet"}], name:{tr:"Kıymalı Yumurtalı Pide",en:"Minced Meat & Egg Pide"}, desc:{tr:"Kıyma ve yumurta ile hazırlanan klasik pide.",en:"Classic pide with minced meat and egg."} },
   { id: "lahmacun", category: "pide", price: 130, kcal: 310, tags: ["popular"], img: img(1640774), allergens: ["gluten"], ingredients: [{n:"İnce hamur",a:"1 adet"},{n:"Kıymalı harç",a:"80 g"},{n:"Maydanoz & limon",a:"10 g"}], name:{tr:"Lahmacun",en:"Lahmacun"}, desc:{tr:"Çıtır ince hamur üzerine baharatlı kıymalı harç.",en:"Crispy thin dough with spiced minced meat."} },
   // Tatlılar
-  { id: "baklava", category: "tatli", price: 200, kcal: 460, tags: ["popular","chef"], img: img(9897494), allergens: ["gluten","dairy"], ingredients: [{n:"Yufka",a:"80 g"},{n:"Antep fıstığı",a:"35 g"},{n:"Tereyağı",a:"25 g"},{n:"Şerbet",a:"50 ml"}], name:{tr:"Antep Fıstıklı Baklava",en:"Pistachio Baklava"}, desc:{tr:"Antep fıstıklı geleneksel baklava.",en:"Traditional baklava with Antep pistachios."} },
-  { id: "sutlac", category: "tatli", price: 140, kcal: 290, tags: ["veg","popular"], img: img(3026803), allergens: ["dairy"], ingredients: [{n:"Süt",a:"250 ml"},{n:"Pirinç",a:"40 g"},{n:"Şeker",a:"30 g"}], name:{tr:"Fırın Sütlaç",en:"Baked Rice Pudding"}, desc:{tr:"Karamelize üzüyle fırın sütlaç.",en:"Baked rice pudding with caramelized top."} },
+  { id: "baklava", category: "tatli", price: 200, kcal: 460, tags: ["popular","chef"], img: img(312418), allergens: ["gluten","dairy"], ingredients: [{n:"Yufka",a:"80 g"},{n:"Antep fıstığı",a:"35 g"},{n:"Tereyağı",a:"25 g"},{n:"Şerbet",a:"50 ml"}], name:{tr:"Antep Fıstıklı Baklava",en:"Pistachio Baklava"}, desc:{tr:"Antep fıstıklı geleneksel baklava.",en:"Traditional baklava with Antep pistachios."} },
+  { id: "sutlac", category: "tatli", price: 140, kcal: 290, tags: ["veg","popular"], img: img(312418), allergens: ["dairy"], ingredients: [{n:"Süt",a:"250 ml"},{n:"Pirinç",a:"40 g"},{n:"Şeker",a:"30 g"}], name:{tr:"Fırın Sütlaç",en:"Baked Rice Pudding"}, desc:{tr:"Karamelize üzüyle fırın sütlaç.",en:"Baked rice pudding with caramelized top."} },
   // İçecekler
   { id: "ayran", category: "icecek", price: 60, kcal: 90, tags: ["veg"], img: img(27757405), allergens: ["dairy"], ingredients: [{n:"Yoğurt",a:"200 ml"},{n:"Su",a:"80 ml"}], name:{tr:"Ayran",en:"Ayran"}, desc:{tr:"Ev yapımı soğuk ayran.",en:"Homemade chilled ayran."} },
   { id: "cay", category: "icecek", price: 50, kcal: 5, tags: ["veg"], img: img(3551324), allergens: [], ingredients: [{n:"Çay",a:"1 demleme"}], name:{tr:"Çay",en:"Turkish Tea"}, desc:{tr:"Geleneksel Türk çayı.",en:"Traditional Turkish tea."} },
@@ -782,7 +782,7 @@ export default function TorosGurmeMenu() {
 
           <div className="qrm-nav">
             <button className="qrm-navitem active">
-              <Sword size={16} /> <span>{t.navMenu}</span>
+              <Beef size={16} /> <span>{t.navMenu}</span>
             </button>
             <button className="qrm-navitem" onClick={() => setShowCart(true)} style={{ position: "relative" }}>
               <ShoppingBag size={16} />

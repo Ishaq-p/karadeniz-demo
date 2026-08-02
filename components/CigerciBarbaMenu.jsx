@@ -225,7 +225,7 @@ const img = (id) => {
 const ITEMS = [
   // Kahvaltı
   {
-    id: "sinirsiz", category: "kahvalti", price: 350, kcal: 800, tags: ["popular", "chef"], img: img(5945552),
+    id: "sinirsiz", category: "kahvalti", price: 350, kcal: 800, tags: ["popular", "chef"], img: img(2338711),
     allergens: ["dairy", "egg", "gluten"],
     ingredients: [{ n: "Organik yumurta", a: "2 adet" }, { n: "Peynir çeşitleri", a: "80 g" }, { n: "Bal & kaymak", a: "30 g" }, { n: "Zeytin", a: "40 g" }, { n: "Domates/salatalık", a: "60 g" }],
     name: { tr: "Sınırsız Köy Kahvaltısı", en: "Unlimited Village Breakfast" },
@@ -239,14 +239,14 @@ const ITEMS = [
     desc: { tr: "Kıvamında pişirilmiş, organik yumurtalı, biberli menemen.", en: "Perfectly cooked menemen with organic eggs and peppers." },
   },
   {
-    id: "sahanda", category: "kahvalti", price: 160, kcal: 380, tags: ["light"], img: img(3769021),
+    id: "sahanda", category: "kahvalti", price: 160, kcal: 380, tags: ["light"], img: img(2338711),
     allergens: ["egg", "dairy"],
     ingredients: [{ n: "Organik yumurta", a: "2 adet" }, { n: "Tereyağı", a: "15 g" }, { n: "Sucuk/pastırma", a: "50 g" }],
     name: { tr: "Sahanda Yumurta", en: "Pan-fried Eggs" },
     desc: { tr: "Tereyağında sahanda pişirilmiş, istenilen katkılarla servis edilir.", en: "Pan-fried in butter, served with your choice of accompaniments." },
   },
   {
-    id: "kunefe", category: "kahvalti", price: 220, kcal: 560, tags: ["chef", "popular"], img: img(9897494),
+    id: "kunefe", category: "kahvalti", price: 220, kcal: 560, tags: ["chef", "popular"], img: img(2338711),
     allergens: ["dairy", "gluten", "nuts"],
     ingredients: [{ n: "Kadayıf", a: "150 g" }, { n: "Peynir", a: "80 g" }, { n: "Şerbet", a: "50 ml" }, { n: "Antep fıstığı", a: "10 g" }],
     name: { tr: "Künefe", en: "Künefe" },
@@ -305,7 +305,7 @@ const ITEMS = [
     desc: { tr: "Klasik İşkembe çorbası, sarımsak ve sirke ile servis edilir.", en: "Classic tripe soup served with garlic and vinegar." },
   },
   {
-    id: "mercimek", category: "corba", price: 100, kcal: 180, tags: ["veg", "light"], img: img(775032),
+    id: "mercimek", category: "corba", price: 100, kcal: 180, tags: ["veg", "light"], img: img(2338711),
     allergens: [],
     ingredients: [{ n: "Kırmızı mercimek", a: "80 g" }, { n: "Soğan, havuç", a: "60 g" }, { n: "Pul biber", a: "2 g" }],
     name: { tr: "Mercimek Çorbası", en: "Lentil Soup" },
@@ -313,7 +313,7 @@ const ITEMS = [
   },
   // Tatlılar
   {
-    id: "sutlac", category: "tatli", price: 120, kcal: 280, tags: ["popular", "veg"], img: img(3026803),
+    id: "sutlac", category: "tatli", price: 120, kcal: 280, tags: ["popular", "veg"], img: img(312418),
     allergens: ["dairy"],
     ingredients: [{ n: "Süt", a: "250 ml" }, { n: "Pirinç", a: "40 g" }, { n: "Şeker", a: "30 g" }],
     name: { tr: "Fırın Sütlaç", en: "Baked Rice Pudding" },
