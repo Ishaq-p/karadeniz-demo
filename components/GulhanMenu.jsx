@@ -17,7 +17,7 @@ const LOGO_ICON = LOGO_FULL;
 
 const TABLE_NUMBER = "12";
 const MENU_UPDATED = "01.08.2026";
-const MAP_LINK = "https://share.google/4JtmTNX61kfIRupDM";
+const MAP_LINK = "https://share.google/f5NEQpW0xFdRvFpqI";
 const INSTAGRAM_LINK = "https://www.instagram.com/gulhanrestoranresmi/";
 const PHONE_LINK = "tel:4446355";
 const WHATSAPP_LINK =
@@ -191,7 +191,7 @@ const ITEMS = [
   },
 
   {
-    id: "incik", category: "grill", price: 480, kcal: 620, tags: ["popular", "chef"], img: img(8992920),
+    id: "incik", category: "grill", price: 480, kcal: 620, tags: ["popular", "chef"], img: "/dana_incik.png",
     allergens: [],
     ingredients: [{ n: "Dana incik", a: "1 porsiyon" }, { n: "Kemik suyu sos", a: "80 ml" }, { n: "Közlenmiş sebze", a: "100 g" }],
     name: { tr: "Dana İncik", en: "Braised Beef Shank" },
@@ -212,7 +212,7 @@ const ITEMS = [
     desc: { tr: "El yapımı acılı kıyma şiş, közlenmiş sebzeler eşliğinde.", en: "Hand-minced spicy skewer, served with charred vegetables." }
   },
   {
-    id: "kuzusis", category: "grill", price: 420, kcal: 500, tags: ["chef"], img: img(8992928),
+    id: "kuzusis", category: "grill", price: 420, kcal: 500, tags: ["chef"], img: "/kuzu_sis.png",
     allergens: [],
     ingredients: [{ n: "Kuzu but", a: "220 g" }, { n: "Zeytinyağı, kekik", a: "10 ml" }, { n: "Izgara sebze", a: "80 g" }],
     name: { tr: "Kuzu Şiş", en: "Lamb Skewer" },

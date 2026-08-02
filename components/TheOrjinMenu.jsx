@@ -169,21 +169,21 @@ const FILTER_ICON = { popular: Star, veg: Leaf, spicy: Flame, light: Feather, ch
 const ITEMS = [
   // Kahvaltı / Breakfast
   {
-    id: "serpme", category: "breakfast", price: 420, kcal: 680, tags: ["popular", "chef"],
+    id: "serpme", category: "breakfast", price: 420, kcal: 680, tags: ["popular", "chef"], img: "/serpme_kahvalti.png",
     allergens: ["dairy", "egg", "gluten"],
     ingredients: [{ n: "Peynir çeşitleri", a: "120 g" }, { n: "Zeytin", a: "60 g" }, { n: "Reçel & bal", a: "3 çeşit" }, { n: "Sahanda yumurta", a: "2 adet" }, { n: "Sıcak ekmek", a: "servis ile" }],
     name: { tr: "Orjin Serpme Kahvaltı", en: "Orjin Breakfast Spread" },
     desc: { tr: "İki kişilik, günün taze ürünleriyle hazırlanan zengin serpme kahvaltı tabağı.", en: "A generous spread for two, built fresh each morning with local favorites." }
   },
   {
-    id: "avokado", category: "breakfast", price: 240, kcal: 390, tags: ["veg", "light"],
+    id: "avokado", category: "breakfast", price: 240, kcal: 390, tags: ["veg", "light"], img: "/avokado_tost.png",
     allergens: ["gluten"],
     ingredients: [{ n: "Ezme avokado", a: "120 g" }, { n: "Ekşi maya ekmek", a: "2 dilim" }, { n: "Cherry domates", a: "40 g" }, { n: "Chili flakes", a: "1 g" }],
     name: { tr: "Avokado Tost", en: "Avocado Toast" },
     desc: { tr: "Ekşi mayalı ekmek üzerinde ezme avokado, cherry domates ve tatlı biber.", en: "Sourdough topped with smashed avocado, cherry tomato and chili flakes." }
   },
   {
-    id: "menemen", category: "breakfast", price: 190, kcal: 330, tags: ["veg", "popular"],
+    id: "menemen", category: "breakfast", price: 190, kcal: 330, tags: ["veg", "popular"], img: "/menemen.png",
     allergens: ["egg", "dairy"],
     ingredients: [{ n: "Yumurta", a: "3 adet" }, { n: "Domates", a: "80 g" }, { n: "Biber", a: "40 g" }, { n: "Tereyağı", a: "10 g" }],
     name: { tr: "Menemen", en: "Menemen (Turkish Scramble)" },
@@ -192,21 +192,21 @@ const ITEMS = [
 
   // Lezzet / Food
   {
-    id: "orjinburger", category: "food", price: 340, kcal: 790, tags: ["popular", "chef"],
+    id: "orjinburger", category: "food", price: 340, kcal: 790, tags: ["popular", "chef"], img: "/orjinburger.png",
     allergens: ["dairy", "gluten"],
     ingredients: [{ n: "Dana köfte", a: "180 g" }, { n: "Cheddar", a: "30 g" }, { n: "Karamelize soğan", a: "40 g" }, { n: "Brioche ekmek", a: "1 adet" }],
     name: { tr: "Orjin Burger", en: "The Orjin Burger" },
     desc: { tr: "El yapımı dana köfte, cheddar ve karamelize soğanla, brioche ekmek arasında.", en: "House-ground beef patty with cheddar and caramelized onion on brioche." }
   },
   {
-    id: "fajitawrap", category: "food", price: 290, kcal: 560, tags: ["spicy"],
+    id: "fajitawrap", category: "food", price: 290, kcal: 560, tags: ["spicy"], img: "/fajitawrap.png",
     allergens: ["gluten", "dairy"],
     ingredients: [{ n: "Tavuk fajita", a: "150 g" }, { n: "Tortilla", a: "1 adet" }, { n: "Acı sos", a: "20 g" }, { n: "Cheddar", a: "20 g" }],
     name: { tr: "Tavuk Fajita Wrap", en: "Chicken Fajita Wrap" },
     desc: { tr: "Marine edilmiş tavuk, közlenmiş biberler ve acı sosla dürüm.", en: "Marinated chicken with charred peppers and spicy sauce, wrapped." }
   },
   {
-    id: "kinoa", category: "food", price: 250, kcal: 320, tags: ["veg", "light"],
+    id: "kinoa", category: "food", price: 250, kcal: 320, tags: ["veg", "light"], img: "/kinoa.png",
     allergens: ["nuts"],
     ingredients: [{ n: "Kinoa", a: "100 g" }, { n: "Mevsim yeşillik", a: "60 g" }, { n: "Ceviz", a: "15 g" }, { n: "Nar ekşisi sos", a: "20 ml" }],
     name: { tr: "Kinoa Salata", en: "Quinoa Salad" },
@@ -215,21 +215,21 @@ const ITEMS = [
 
   // Tatlı / Desserts
   {
-    id: "cortexlog", category: "desserts", price: 220, kcal: 540, tags: ["popular", "chef"],
+    id: "cortexlog", category: "desserts", price: 220, kcal: 540, tags: ["popular", "chef"], img: "/cortexlog.png",
     allergens: ["dairy", "gluten", "nuts"],
     ingredients: [{ n: "Bitter çikolata", a: "80 g" }, { n: "Antep fıstığı", a: "20 g" }, { n: "Krema", a: "40 ml" }],
     name: { tr: "Çikolatalı Fıstık Küp", en: "Chocolate Pistachio Cube" },
     desc: { tr: "Yoğun bitter çikolata ve Antep fıstığıyla, imza tatlımız.", en: "Rich dark chocolate paired with pistachio — our signature dessert." }
   },
   {
-    id: "cheesecake", category: "desserts", price: 200, kcal: 450, tags: ["veg"],
+    id: "cheesecake", category: "desserts", price: 200, kcal: 450, tags: ["veg"], img: "/cheesecake.png",
     allergens: ["dairy", "gluten"],
     ingredients: [{ n: "Cream cheese", a: "150 g" }, { n: "Frambuaz sos", a: "40 g" }, { n: "Bisküvi taban", a: "60 g" }],
     name: { tr: "Frambuazlı Cheesecake", en: "Raspberry Cheesecake" },
     desc: { tr: "Kadife dokulu cheesecake, taze frambuaz sosuyla.", en: "Velvety cheesecake finished with fresh raspberry sauce." }
   },
   {
-    id: "kunefe", category: "desserts", price: 230, kcal: 490, tags: ["popular"],
+    id: "kunefe", category: "desserts", price: 230, kcal: 490, tags: ["popular"], img: "/kunefe.png",
     allergens: ["dairy", "gluten", "nuts"],
     ingredients: [{ n: "Tel kadayıf", a: "120 g" }, { n: "Peynir", a: "80 g" }, { n: "Antep fıstığı", a: "15 g" }, { n: "Şerbet", a: "60 ml" }],
     name: { tr: "Antep Fıstıklı Künefe", en: "Pistachio Künefe" },
@@ -238,21 +238,21 @@ const ITEMS = [
 
   // Nargile / Hookah
   {
-    id: "elmanane", category: "hookah", price: 350, kcal: 0, tags: ["popular"],
+    id: "elmanane", category: "hookah", price: 350, kcal: 0, tags: ["popular"], img: "/elmanane.png",
     allergens: [],
     ingredients: [{ n: "Elma aromalı tütün", a: "20 g" }, { n: "Taze nane", a: "servis ile" }],
     name: { tr: "Elma Nane Nargile", en: "Apple Mint Hookah" },
     desc: { tr: "Ferahlatıcı elma ve nane karışımı, klasik favorimiz.", en: "A refreshing apple and mint blend — our classic favorite." }
   },
   {
-    id: "karpuznane", category: "hookah", price: 350, kcal: 0, tags: ["light"],
+    id: "karpuznane", category: "hookah", price: 350, kcal: 0, tags: ["light"], img: "/karpuznane.png",
     allergens: [],
     ingredients: [{ n: "Karpuz aromalı tütün", a: "20 g" }, { n: "Taze nane", a: "servis ile" }],
     name: { tr: "Karpuz Nane Nargile", en: "Watermelon Mint Hookah" },
     desc: { tr: "Yaz meyveli, hafif ve serinletici bir karışım.", en: "A light, cooling summer-fruit blend." }
   },
   {
-    id: "orjinkaris", category: "hookah", price: 420, kcal: 0, tags: ["chef"],
+    id: "orjinkaris", category: "hookah", price: 420, kcal: 0, tags: ["chef"], img: "https://picsum.photos/seed/orjinkaris/400/400",
     allergens: [],
     ingredients: [{ n: "Özel meyve karışımı", a: "20 g" }, { n: "Buzlu kap servisi", a: "opsiyonel" }],
     name: { tr: "Orjin Özel Karışım", en: "The Orjin House Blend" },
@@ -261,21 +261,21 @@ const ITEMS = [
 
   // Kokteyl / Drinks (alkolsüz)
   {
-    id: "vespa", category: "drinks", price: 260, kcal: 180, tags: ["popular", "chef"],
+    id: "vespa", category: "drinks", price: 260, kcal: 180, tags: ["popular", "chef"], img: "https://picsum.photos/seed/vespa/400/400",
     allergens: [],
     ingredients: [{ n: "Ananas suyu", a: "80 ml" }, { n: "Nane", a: "5 yaprak" }, { n: "Soda", a: "60 ml" }, { n: "Lime", a: "1/2 adet" }],
     name: { tr: "Vespa", en: "Vespa" },
     desc: { tr: "Ananas, nane ve limla hazırlanan imza alkolsüz kokteylimiz.", en: "Our signature alcohol-free cocktail with pineapple, mint and lime." }
   },
   {
-    id: "narekşi", category: "drinks", price: 220, kcal: 140, tags: ["light"],
+    id: "narekşi", category: "drinks", price: 220, kcal: 140, tags: ["light"], img: "https://picsum.photos/seed/nareksi/400/400",
     allergens: [],
     ingredients: [{ n: "Nar ekşisi", a: "30 ml" }, { n: "Elma suyu", a: "80 ml" }, { n: "Soda", a: "60 ml" }],
     name: { tr: "Nar Ekşili Mocktail", en: "Pomegranate Mocktail" },
     desc: { tr: "Ekşi-tatlı dengeyle ferahlatan, nar ekşili soğuk içecek.", en: "A tangy-sweet, refreshing pomegranate cooler." }
   },
   {
-    id: "passion", category: "drinks", price: 230, kcal: 150, tags: ["popular"],
+    id: "passion", category: "drinks", price: 230, kcal: 150, tags: ["popular"], img: "https://picsum.photos/seed/passion/400/400",
     allergens: [],
     ingredients: [{ n: "Passion fruit püresi", a: "40 g" }, { n: "Portakal suyu", a: "60 ml" }, { n: "Soda", a: "60 ml" }],
     name: { tr: "Passion Fruit Fizz", en: "Passion Fruit Fizz" },
