@@ -118,6 +118,33 @@ export default function DemoList() {
                 </div>
               </Link>
             ))}
+              <Link 
+                key={'https://perluna-demo.vercel.app/'} 
+                href={`https://perluna-demo.vercel.app/`}
+                className="demo-link"
+              >
+                <div className="demo-card">
+                  <h2 className="demo-card-title">
+                    perluna-demo
+                  </h2>
+                  <div className="demo-card-icon">
+                    <svg 
+                      width="16" 
+                      height="16" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                      style={{ color: '#80cbc4' }}
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </Link>
           </div>
         </div>
       </div>

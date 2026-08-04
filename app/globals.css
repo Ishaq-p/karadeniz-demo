@@ -1,3 +1,9 @@
+/* Tailwind CSS — used by the Perluna demo.
+   Content paths in tailwind.config.js are scoped to perluna only. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;

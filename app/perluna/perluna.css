@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-void text-pearl font-body antialiased;
+  background: radial-gradient(ellipse at 50% 0%, #423B3A 0%, #2B2625 55%, #1F1B1A 100%);
+}
+
+/* ---- Reusable brand primitives -------------------------------------- */
+
+@layer components {
+  /* Gold engraved text — used sparingly, for the wordmark and key CTAs */
+  .text-gold-foil {
+    @apply bg-gold-foil bg-[length:200%_auto] bg-clip-text text-transparent;
+    animation: shimmer 6s linear infinite;
+  }
+
+  /* Hairline gold divider with a center ornament, echoes the logo's
+     star-and-line motif under "AURA" */
+  .divider-aura {
+    @apply flex items-center justify-center gap-4 text-gold/70;
+  }
+  .divider-aura::before,
+  .divider-aura::after {
+    content: "";
+    @apply h-px w-16 bg-gradient-to-r from-transparent via-gold/60 to-transparent sm:w-24;
+  }
+
+  /* Glass panel used across the Advisor + Booking sections */
+  .glass-panel {
+    @apply relative rounded-2xl border border-gold/20 bg-white/[0.03] backdrop-blur-xl;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 20px 60px -20px rgba(0, 0, 0, 0.6);
+  }
+
+  .eyebrow {
+    @apply font-sans text-xs uppercase tracking-widest2 text-aura/80;
+  }
+}
+
+/* Respect reduced motion across the whole app */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
