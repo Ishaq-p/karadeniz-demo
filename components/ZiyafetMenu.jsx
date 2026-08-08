@@ -6,6 +6,10 @@ import {
   ChevronRight, Info, Star, Leaf, Flame, ShoppingBag, ShieldCheck,
   RefreshCw, Plus, Minus, MapPin, Hash, Sunset, ChefHat, Feather,
   Milk, Wheat, ExternalLink, Navigation, Share2, Languages, ArrowLeft,
+  Table,
+  LucideTable,
+  LampDesk,
+  Utensils,
 } from "lucide-react";
 
 /* ---------------------------------------------------------------- */
@@ -290,6 +294,7 @@ export default function QrMenuDemo() {
   const [search, setSearch] = useState("");
   const [cart, setCart] = useState({});
   const [waiterToast, setWaiterToast] = useState(false);
+  const [showAiModal, setShowAiModal] = useState(false);
   const [aiPhase, setAiPhase] = useState("idle"); // idle | q1 | q2 | result
   const [aiAnswers, setAiAnswers] = useState({ q1: null, q2: null });
   const [aiAdded, setAiAdded] = useState(false);
@@ -358,10 +363,15 @@ export default function QrMenuDemo() {
   function addAiSuggestion(item) {
     addToCart(item.id, 1);
     setAiAdded(true);
-    setTimeout(() => setAiAdded(false), 1400);
+    setTimeout(() => {
+      setAiAdded(false);
+      setShowAiModal(false);
+      setAiPhase("idle");
+    }, 1200);
   }
 
   const aiResult = aiPhase === "result" ? pickAiSuggestion(aiAnswers.q1, aiAnswers.q2) : null;
+  const isModalOpen = showAiModal || showCart || !!selectedItem;
 
   return (
     <div className="qrm-root" lang={lang === "tr" ? "tr-TR" : "en-US"}>
@@ -429,8 +439,10 @@ export default function QrMenuDemo() {
         .qrm-scroll::-webkit-scrollbar-thumb { background: var(--gold); }
 
         .qrm-header {
-          padding: 10px 16px 14px; display: flex; align-items: center; gap: 10px;
-          background: transparent; flex-shrink: 0; position: relative;
+          padding: 9px 12px; display: flex; align-items: center; 
+          gap: 10px; flex-shrink: 0; position: sticky; top: 0; 
+          z-index: 40; background: var(--walnut-deep);
+          border-bottom: 1px solid rgba(243,234,217,0.08);
         }
         
         .qrm-headlogo { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 500; color: var(--ivory); display: flex; align-items: baseline; gap: 2px; }
@@ -458,40 +470,52 @@ export default function QrMenuDemo() {
         .qrm-greet { display: flex; align-items: center; gap: 8px; font-size: 24px; font-family: 'Fraunces', serif; font-weight: 400; color: var(--ivory); position: relative; z-index: 2; line-height: 1.1;}
         .qrm-greetsub { font-size: 14px; color: var(--ivory-deep); font-family: 'Cormorant Garamond', serif; font-style: italic; margin-top: 6px; position: relative; z-index: 2;}
 
-        .qrm-ai {
-          margin: -12px 16px 0; position: relative; z-index: 5;
+        /* AI Trigger Banner */
+        .qrm-ai-trigger {
+          margin: -16px 16px 16px; position: relative; z-index: 5;
           background: var(--burgundy-deep);
-          border: 1px solid var(--gold); border-left: 3px solid var(--gold-bright);
-          padding: 16px; box-shadow: 0 14px 30px rgba(0,0,0,0.5);
+          border: 1px solid rgba(201,151,63,0.4);
+          padding: 16px; display: flex; align-items: center; justify-content: space-between;
+          cursor: pointer; box-shadow: 0 14px 30px rgba(0,0,0,0.5); text-align: left;
+          clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+          transition: background 0.2s;
         }
-        .qrm-ai-eyebrow { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 500;
-          letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 8px;}
-        .qrm-ai-title { font-family: 'Fraunces', serif; font-size: 16px; font-weight: 400; color: var(--ivory); line-height: 1.3; }
-        .qrm-ai-sub { font-size: 11px; color: rgba(243,234,217,0.7); margin-top: 4px; line-height: 1.4; }
-        .qrm-ai-name { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 500; color: var(--ivory); }
-        .qrm-ai-reason { font-size: 11px; color: rgba(243,234,217,0.7); margin-top: 4px; line-height: 1.4; }
-        .qrm-ai-row { display: flex; align-items: center; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
-        .qrm-ai-options { display: flex; flex-direction: column; gap: 7px; margin-top: 14px; }
+        .qrm-ai-trigger::before {
+          content: ''; position: absolute; top: 0; left: 16px; right: 0; height: 2px;
+          background: linear-gradient(90deg, var(--gold), var(--turquoise-bright), var(--gold));
+        }
+        .qrm-ai-trigger:active { background: #3c0d10; }
+        .qrm-ai-trigger-left { display: flex; flex-direction: column; gap: 4px; }
+        .qrm-ai-trigger-sub { font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-bright); display: flex; align-items: center; gap: 6px; }
+        .qrm-ai-trigger-title { font-family: 'Fraunces', serif; font-size: 15px; font-weight: 500; color: var(--ivory); }
+        .qrm-ai-trigger-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: var(--gold-bright); background: rgba(227,177,88,0.1); border-radius: 50%; }
+
+        .qrm-ai-title { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 400; color: var(--ivory); line-height: 1.3; }
+        .qrm-ai-sub { font-size: 13px; color: rgba(243,234,217,0.7); margin-top: 4px; line-height: 1.4; }
+        .qrm-ai-name { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500; color: var(--ivory); }
+        .qrm-ai-reason { font-size: 13px; color: rgba(243,234,217,0.7); margin-top: 4px; line-height: 1.5; }
+        .qrm-ai-row { display: flex; align-items: center; gap: 8px; margin-top: 24px; flex-wrap: wrap; }
+        .qrm-ai-options { display: flex; flex-direction: column; gap: 8px; margin-top: 18px; }
         .qrm-ai-opt {
-          text-align: left; font-size: 12px; font-weight: 500; color: var(--ivory); font-family: 'Jost', sans-serif;
+          text-align: left; font-size: 13px; font-weight: 500; color: var(--ivory); font-family: 'Jost', sans-serif;
           background: rgba(255,255,255,0.03); border: 1px solid rgba(201,151,63,0.3); border-radius: 0;
-          padding: 10px 14px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+          padding: 14px 16px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;
           transition: background 0.2s;
         }
         .qrm-ai-opt:active { background: rgba(201,151,63,0.15); border-color: var(--gold-bright); }
-        .qrm-ai-back { display: flex; align-items: center; gap: 4px; font-size: 10.5px; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; color: var(--turquoise-bright); background: none; border: none; cursor: pointer; margin-bottom: 8px; font-family: 'Jost', sans-serif;}
+        .qrm-ai-back { display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; color: var(--turquoise-bright); background: none; border: none; cursor: pointer; margin-bottom: 16px; font-family: 'Jost', sans-serif;}
 
         .qrm-btn-gold {
-          font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--walnut-deep); border: none; cursor: pointer;
+          font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--walnut-deep); border: none; cursor: pointer;
           background: var(--gold-bright);
-          padding: 12px 20px; display: flex; align-items: center; gap: 6px;
+          padding: 14px 20px; display: flex; align-items: center; gap: 6px;
           font-family: 'Jost', sans-serif; transition: transform .15s ease;
           clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
         }
         .qrm-btn-gold:active { transform: scale(0.96); }
         .qrm-btn-ghost {
-          font-size: 10.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ivory); background: transparent;
-          border: 1px solid rgba(243,234,217,0.3); padding: 10px 14px;
+          font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ivory); background: transparent;
+          border: 1px solid rgba(243,234,217,0.3); padding: 12px 16px;
           cursor: pointer; display: flex; align-items: center; gap: 5px; font-family: 'Jost', sans-serif;
         }
 
@@ -523,10 +547,10 @@ export default function QrMenuDemo() {
           min-width: 80px; aspect-ratio: auto; 
         }
         .qrm-cat.active { background: var(--turquoise); }
-        .qrm-cat span { font-size: 9px; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; color: rgba(243,234,217,0.8); text-align: center; white-space: pre-wrap; line-height: 1.2; }
+        .qrm-cat span { font-size: 9px; font-weight: 500; text-transform: uppercase; color: rgba(243,234,217,0.8); text-align: center; white-space: pre-wrap; line-height: 1.2; }
         .qrm-cat.active span { color: var(--ivory); font-weight: 600; }
 
-        .qrm-list { padding: 12px 16px 110px; display: flex; flex-direction: column; gap: 14px; position: relative; z-index: 2;}
+        .qrm-list { padding: 12px 16px 80px; display: flex; flex-direction: column; gap: 14px; position: relative; z-index: 2;}
         .qrm-empty { text-align: center; padding: 40px 20px; color: rgba(243,234,217,0.5); font-size: 12px; }
         .qrm-card { 
           display: flex; gap: 14px; background: #1f0f06; border: 1px solid rgba(201,151,63,0.3); padding: 14px; cursor: pointer; position: relative; 
@@ -666,19 +690,27 @@ export default function QrMenuDemo() {
             <span>9:41</span>
             <span>Shahr-e-Naw · Wi-Fi</span>
           </div>
-          <div className="qrm-table"><Hash size={11} /> {t.table} {TABLE_NUMBER}</div>
 
-          <div className="qrm-scroll">
-            <div className="qrm-header">
+
+
+          <div className="qrm-notch" />
+
+          <div className="qrm-scroll" style={{ overflowY: isModalOpen ? "hidden" : "auto" }}>
+            <div className="qrm-header">    
               <div className="qrm-headlogo">ZIYAFAT<span className="dot">.</span></div>
-              <div style={{ marginLeft: "10px" }}>
-                <div className="qrm-hsub">{t.subtitle}</div>
+              
+              {/* Absolute position dead-center to ignore side elements */}
+              <div className="qrm-table" style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", margin: 0 }}>
+                <Utensils size={12} strokeWidth={2.5} />
+                <span>{TABLE_NUMBER}</span>
               </div>
-              <div className="qrm-legal" onClick={() => setLegalTip((v) => !v)}>
-                <ShieldCheck size={11} /> {t.legalBadge}
+
+              <div className="qrm-legal" onClick={() => setLegalTip((v) => !v)} style={{ marginLeft: "auto" }}>
+                <ShieldCheck size={11} />
               </div>
+              
               {legalTip && (
-                <div className="qrm-legaltip">
+                <div className="qrm-legaltip" style={{ top: "60px" }}>
                   {t.legalTooltip}
                   <b>{t.lastUpdated}: {MENU_UPDATED}</b>
                 </div>
@@ -691,65 +723,15 @@ export default function QrMenuDemo() {
               <div className="qrm-hero-wave"></div>
             </div>
 
-            {/* AI concierge */}
-            <div className="qrm-ai">
-              <div className="qrm-ai-eyebrow"><Sparkles size={12} /> {t.aiEyebrow}</div>
-
-              {aiPhase === "idle" && (
-                <>
-                  <div className="qrm-ai-title">{t.aiIdleTitle}</div>
-                  <div className="qrm-ai-sub">{t.aiIdleSub}</div>
-                  <div className="qrm-ai-row">
-                    <button className="qrm-btn-gold" onClick={() => setAiPhase("q1")}>
-                      <Sparkles size={13} /> {t.aiStart}
-                    </button>
-                  </div>
-                </>
-              )}
-
-              {aiPhase === "q1" && (
-                <>
-                  <div className="qrm-ai-title">{t.aiQ1}</div>
-                  <div className="qrm-ai-options">
-                    {t.aiQ1Options.map((o) => (
-                      <button key={o.key} className="qrm-ai-opt" onClick={() => chooseQ1(o.key)}>
-                        {o.label} <ChevronRight size={13} color="var(--gold-bright)" />
-                      </button>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              {aiPhase === "q2" && (
-                <>
-                  <button className="qrm-ai-back" onClick={() => setAiPhase("q1")}><ArrowLeft size={11} /> {t.back}</button>
-                  <div className="qrm-ai-title">{t.aiQ2}</div>
-                  <div className="qrm-ai-options">
-                    {t.aiQ2Options.map((o) => (
-                      <button key={o.key} className="qrm-ai-opt" onClick={() => chooseQ2(o.key)}>
-                        {o.label} <ChevronRight size={13} color="var(--gold-bright)" />
-                      </button>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              {aiPhase === "result" && aiResult && (
-                <>
-                  <div className="qrm-ai-title" style={{ fontSize: 11, opacity: 0.65, marginBottom: 4 }}>{t.aiResultEyebrow}</div>
-                  <div className="qrm-ai-name">{aiResult.name[lang]}</div>
-                  <div className="qrm-ai-reason">{aiResult.desc[lang]}</div>
-                  <div className="qrm-ai-row">
-                    <button className="qrm-btn-gold" onClick={() => addAiSuggestion(aiResult)}>
-                      {aiAdded ? <Check size={13} /> : <ShoppingBag size={13} />}
-                      {aiAdded ? t.added : t.aiCta}
-                    </button>
-                    <button className="qrm-btn-ghost" onClick={resetAi}>
-                      <RefreshCw size={12} /> {t.aiRetry}
-                    </button>
-                  </div>
-                </>
-              )}
+            {/* AI Concierge Trigger Banner */}
+            <div className="qrm-ai-trigger" onClick={() => setShowAiModal(true)}>
+              <div className="qrm-ai-trigger-left">
+                <div className="qrm-ai-trigger-sub"><Sparkles size={11} /> {t.aiEyebrow}</div>
+                <div className="qrm-ai-trigger-title">{t.aiIdleTitle}</div>
+              </div>
+              <div className="qrm-ai-trigger-icon">
+                <ChevronRight size={18} />
+              </div>
             </div>
 
             <div className="qrm-searchwrap">
@@ -927,6 +909,78 @@ export default function QrMenuDemo() {
                     onClick={() => { addToCart(selectedItem.id, detailQty); setSelectedItem(null); }}>
                     <ShoppingBag size={14} /> {t.detailsCta} · {fmtTL(selectedItem.price * detailQty)}
                   </button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* AI Concierge Modal */}
+          {showAiModal && (
+            <div className="qrm-sheet-backdrop" onClick={() => setShowAiModal(false)}>
+              <div className="qrm-sheet" onClick={(e) => e.stopPropagation()}>
+                <div className="qrm-sheet-handle" />
+                <div className="qrm-sheet-head">
+                  <div className="qrm-sheet-title" style={{ fontSize: '15px', color: 'var(--gold-bright)' }}>
+                    <Sparkles size={14} style={{ marginRight: '6px', verticalAlign: 'text-bottom' }}/> 
+                    {t.aiEyebrow}
+                  </div>
+                  <button className="qrm-iconbtn" onClick={() => setShowAiModal(false)}><X size={16} /></button>
+                </div>
+                
+                <div style={{ padding: '14px 20px 40px' }}>
+                  {aiPhase === "idle" && (
+                    <>
+                      <div className="qrm-ai-title" style={{ fontSize: '22px', marginBottom: '8px' }}>{t.aiIdleTitle}</div>
+                      <div className="qrm-ai-sub" style={{ fontSize: '13px', marginBottom: '24px' }}>{t.aiIdleSub}</div>
+                      <button className="qrm-btn-gold" style={{ width: '100%', justifyContent: 'center', padding: '16px' }} onClick={() => setAiPhase("q1")}>
+                        <Sparkles size={15} /> {t.aiStart}
+                      </button>
+                    </>
+                  )}
+
+                  {aiPhase === "q1" && (
+                    <>
+                      <div className="qrm-ai-title" style={{ fontSize: '20px', marginBottom: '16px' }}>{t.aiQ1}</div>
+                      <div className="qrm-ai-options">
+                        {t.aiQ1Options.map((o) => (
+                          <button key={o.key} className="qrm-ai-opt" onClick={() => chooseQ1(o.key)}>
+                            {o.label} <ChevronRight size={16} color="var(--gold-bright)" />
+                          </button>
+                        ))}
+                      </div>
+                    </>
+                  )}
+
+                  {aiPhase === "q2" && (
+                    <>
+                      <button className="qrm-ai-back" onClick={() => setAiPhase("q1")}><ArrowLeft size={13} /> {t.back}</button>
+                      <div className="qrm-ai-title" style={{ fontSize: '20px', marginBottom: '16px' }}>{t.aiQ2}</div>
+                      <div className="qrm-ai-options">
+                        {t.aiQ2Options.map((o) => (
+                          <button key={o.key} className="qrm-ai-opt" onClick={() => chooseQ2(o.key)}>
+                            {o.label} <ChevronRight size={16} color="var(--gold-bright)" />
+                          </button>
+                        ))}
+                      </div>
+                    </>
+                  )}
+
+                  {aiPhase === "result" && aiResult && (
+                    <>
+                      <div className="qrm-ai-title" style={{ fontSize: '11px', opacity: 0.65, marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{t.aiResultEyebrow}</div>
+                      <div className="qrm-ai-name" style={{ fontSize: '24px' }}>{aiResult.name[lang]}</div>
+                      <div className="qrm-ai-reason" style={{ fontSize: '14px', marginBottom: '24px' }}>{aiResult.desc[lang]}</div>
+                      <div className="qrm-ai-row">
+                        <button className="qrm-btn-gold" style={{ flex: 1, justifyContent: 'center', padding: '16px' }} onClick={() => addAiSuggestion(aiResult)}>
+                          {aiAdded ? <Check size={15} /> : <ShoppingBag size={15} />}
+                          {aiAdded ? t.added : t.aiCta}
+                        </button>
+                        <button className="qrm-btn-ghost" style={{ padding: '16px' }} onClick={resetAi}>
+                          <RefreshCw size={15} />
+                        </button>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
