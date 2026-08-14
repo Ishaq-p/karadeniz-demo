@@ -7,6 +7,8 @@ const config = {
   content: [
     "./app/perluna/**/*.{js,jsx,ts,tsx}",
     "./components/perluna/**/*.{js,jsx,ts,tsx}",
+    "./app/l-atelier-du-chocolat/**/*.{js,jsx,ts,tsx}",
+    "./components/LAtelierDuChocolat.jsx",
   ],
   theme: {
     extend: {
