@@ -9,6 +9,9 @@ const config = {
     "./components/perluna/**/*.{js,jsx,ts,tsx}",
     "./app/l-atelier-du-chocolat/**/*.{js,jsx,ts,tsx}",
     "./components/LAtelierDuChocolat.jsx",
+    "./components/KayaBalikMenu.jsx",
+    "./components/KayaBalikMenu2.jsx",
+    "./app/kaya-balik/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
